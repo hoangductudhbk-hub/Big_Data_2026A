@@ -11,6 +11,7 @@ Hệ thống tích hợp dữ liệu giao thông New York (tốc độ và lưu 
 - **Mã nguồn:** https://github.com/hoangductudhbk-hub/Big_Data_2026A
 - **Dữ liệu gốc New York 2024 (khoảng 1,2 GB):** [Google Drive](https://drive.google.com/drive/folders/1dQq9kATcZ4wKA_DBr2S8nlsjQdZNfEy-?usp=sharing)
   Tải về và đặt vào thư mục `data/raw/` để chạy lại pipeline từ đầu (hoặc tải lại trực tiếp từ nguồn bằng `tai_du_lieu.bat`).
+- **Chạy nhanh không cần dữ liệu gốc:** dữ liệu đã xử lý (`data/interim`, `data/processed`, dạng Parquet) có sẵn trong repo. Clone về là chạy được ngay Phase 2 (Spark), Phase 3 (`chay_phase3.bat` hoặc `docker compose`) và dashboard; dữ liệu gốc chỉ cần khi muốn chạy lại Phase 1 từ đầu.
 - **Hồ sơ nộp bài** (báo cáo, slide, kịch bản demo): thư mục [`NOP_BAI/`](NOP_BAI/)
 
 ## Chạy nhanh
