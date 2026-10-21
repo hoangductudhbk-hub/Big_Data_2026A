@@ -3,6 +3,8 @@
 **Mục tiêu** (theo `Projects.pdf`): *"Dashboard with charts that help understand an overview of the data analysis"*, chứng minh hệ thống chạy thật trên dữ liệu thật.
 **Thời lượng:** 2–3 phút · **Thực hiện:** Nhóm 2 (một người thao tác, một người thuyết minh)
 
+**Mã nguồn:** https://github.com/hoangductudhbk-hub/Big_Data_2026A · **Dữ liệu gốc:** [Google Drive](https://drive.google.com/drive/folders/1dQq9kATcZ4wKA_DBr2S8nlsjQdZNfEy-?usp=sharing)
+
 ---
 
 ## 0. Chuẩn bị (làm trước buổi bảo vệ, không trình chiếu)

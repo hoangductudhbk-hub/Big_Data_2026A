@@ -4,6 +4,9 @@
 **Thời lượng:** 12–15 phút (14 slide, khoảng 1 phút/slide) + 2–3 phút demo (`03_KICH_BAN_DEMO.md`)
 **Hình minh họa:** thư mục `NOP_BAI/hinh/`
 
+**Mã nguồn:** https://github.com/hoangductudhbk-hub/Big_Data_2026A  
+**Dữ liệu gốc (1,2 GB):** [Google Drive](https://drive.google.com/drive/folders/1dQq9kATcZ4wKA_DBr2S8nlsjQdZNfEy-?usp=sharing)
+
 > Mọi số liệu trong slide lấy từ `docs/bao-cao/` và `docs/huong-dan/`, đo trên dữ liệu thật New York 2024.
 
 ---
