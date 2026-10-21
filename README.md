@@ -13,14 +13,6 @@ Hệ thống tích hợp dữ liệu giao thông New York (tốc độ và lưu 
   Tải về và đặt vào thư mục `data/raw/` để chạy lại pipeline từ đầu (hoặc tải lại trực tiếp từ nguồn bằng `tai_du_lieu.bat`).
 - **Hồ sơ nộp bài** (báo cáo, slide, kịch bản demo): thư mục [`NOP_BAI/`](NOP_BAI/)
 
-## Trạng thái và bàn giao (14/10/2026)
-
-
-- **Đã xong Phase 0–3 (bước 01–22)**, chạy trên dữ liệu thật NYC 2024. Definition of Done: 17/17 (`docs/huong-dan/22_tong_ket.md`).
-- **Việc còn lại cho người làm tiếp:** `docs/huong-dan/23_viec_con_lai.md` (rà nhãn record linkage, chuẩn bị bảo vệ).
-- **Dữ liệu đã xử lý CÓ trên Git** (`data/interim`, `data/processed`, khoảng 50 MB Parquet): clone về là chạy được ngay Phase 2 (Spark), Phase 3 (`chay_phase3.bat` hoặc `docker compose`) và dashboard. **Dữ liệu gốc `data/raw` (1,2 GB) KHÔNG có** vì GitHub chặn file > 100 MB; chỉ cần khi muốn chạy lại Phase 1 từ đầu: tải lại theo `docs/huong-dan/05_thu_thap_du_lieu.md` (cần VPN nếu ở Việt Nam).
-- Mỗi bước có file hướng dẫn riêng trong `docs/huong-dan/` (mục tiêu, giải trình, lệnh chạy, kết quả, lỗi đã gặp) và báo cáo số liệu trong `docs/bao-cao/`.
-
 ## Chạy nhanh
 
 ```bash
