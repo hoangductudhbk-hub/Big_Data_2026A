@@ -1,7 +1,7 @@
 # KỊCH BẢN DEMO HỆ THỐNG
 
 **Mục tiêu** (theo `Projects.pdf`): *"Dashboard with charts that help understand an overview of the data analysis"*, chứng minh hệ thống chạy thật trên dữ liệu thật.
-**Thời lượng:** 2–3 phút · **Người demo:** …… · **Người thuyết minh:** ……
+**Thời lượng:** 2–3 phút · **Thực hiện:** Nhóm 2 (một người thao tác, một người thuyết minh)
 
 ---
 

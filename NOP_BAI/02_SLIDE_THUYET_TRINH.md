@@ -14,7 +14,7 @@
 - Hệ thống tích hợp dữ liệu và phân tích thống kê giao thông đô thị quy mô lớn
 - *Big Data Integration and Statistical Analysis System for Urban Traffic Data*
 - Học phần IT5427 – Tích hợp và Xử lý Dữ liệu lớn · GVHD: TS. Vũ Tuyết Trinh
-- Nhóm: …… · Thành viên: ……
+- Nhóm 2: Nguyễn Quang Tiến (20261111M) · Hoàng Đức Tư (20261119M) · Cao Tiến Khải (20261109M) · Nguyễn Hoàng Quốc (20261110M)
 
 **Hình:** không
 
