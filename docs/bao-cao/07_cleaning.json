@@ -1,0 +1,321 @@
+{
+ "generated": "2026-10-13 15:18",
+ "weather": {
+  "source": "weather",
+  "rows_in": 43920,
+  "rows_out": 43915,
+  "steps": [
+   {
+    "rule": "Thiếu thời gian, quận hoặc chỉ số đo",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "Nhiệt độ ngoài [-40, 50] °C hoặc mưa/tuyết âm",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "Trùng (trạm, giờ địa phương) do lùi giờ 03/11",
+    "affected": 10,
+    "action": "gộp 2 → 1",
+    "note": "Số đo lấy trung bình; weather_code lấy giá trị lớn hơn (thời tiết xấu hơn)"
+   },
+   {
+    "rule": "Mã WMO không thuộc nhóm nào",
+    "affected": 0,
+    "action": "giữ lại, weather_condition = null",
+    "note": ""
+   },
+   {
+    "rule": "Đổi tên cột theo contract",
+    "affected": 43915,
+    "action": "đổi tên",
+    "note": "temperature_2m → temperature, rain → rainfall, time_local → timestamp"
+   }
+  ],
+  "seconds": 0.3
+ },
+ "volume": {
+  "source": "volume",
+  "rows_in": 95203,
+  "rows_out": 94824,
+  "steps": [
+   {
+    "rule": "Thời gian không hợp lệ, phút lệch lưới 15', vol rỗng hoặc âm",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "Tên quận không thuộc 5 quận chuẩn",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "Chuẩn hóa chữ hoa và khoảng trắng: street",
+    "affected": 0,
+    "action": "sửa",
+    "note": ""
+   },
+   {
+    "rule": "Chuẩn hóa chữ hoa và khoảng trắng: fromst",
+    "affected": 95203,
+    "action": "sửa",
+    "note": ""
+   },
+   {
+    "rule": "Chuẩn hóa chữ hoa và khoảng trắng: tost",
+    "affected": 95203,
+    "action": "sửa",
+    "note": ""
+   },
+   {
+    "rule": "Chuẩn hóa chữ hoa và khoảng trắng: direction",
+    "affected": 0,
+    "action": "sửa",
+    "note": ""
+   },
+   {
+    "rule": "wktgeom không đọc được",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "Đổi tọa độ EPSG:2263 (feet) → WGS84 (lat/lon)",
+    "affected": 95203,
+    "action": "chuyển đổi",
+    "note": "dùng pyproj"
+   },
+   {
+    "rule": "Đoạn có nhiều hơn 1 tọa độ",
+    "affected": 1728,
+    "action": "thống nhất về tọa độ trung bình của đoạn",
+    "note": ""
+   },
+   {
+    "rule": "Trùng (đoạn, hướng, thời điểm) từ nhiều đợt khảo sát",
+    "affected": 379,
+    "action": "gộp: vol = trung bình làm tròn",
+    "note": "Profiling: 379 cặp, tất cả đều khác giá trị"
+   },
+   {
+    "rule": "vol ngoại lai mạnh (Tukey k=3)",
+    "affected": 2083,
+    "action": "GIỮ LẠI, gắn cờ flag_outlier",
+    "note": "ngưỡng [-254, 390] xe/15 phút; có thể là đại lộ đông thật"
+   },
+   {
+    "rule": "vol = 0",
+    "affected": 1292,
+    "action": "GIỮ LẠI, gắn cờ flag_zero",
+    "note": ""
+   }
+  ],
+  "seconds": 1.2,
+  "vol_stats": {
+   "count": 94824.0,
+   "mean": 92.4,
+   "std": 136.7,
+   "min": 0.0,
+   "25%": 22.0,
+   "50%": 57.0,
+   "75%": 114.0,
+   "max": 2187.0
+  }
+ },
+ "speeds": {
+  "source": "speeds",
+  "rows_in": 11970346,
+  "rows_out": 9048108,
+  "steps": [
+   {
+    "rule": "speed hoặc data_as_of không đọc được",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "status = -101 (bản ghi cảm biến không hợp lệ)",
+    "affected": 2922227,
+    "action": "loại bỏ",
+    "note": "Profiling: phân bố tốc độ lệch hẳn, có tuyến hỏng 100%"
+   },
+   {
+    "rule": "speed ≤ 0 với status = 0",
+    "affected": 0,
+    "action": "loại bỏ",
+    "note": ""
+   },
+   {
+    "rule": "speed > 100 mph",
+    "affected": 11,
+    "action": "loại bỏ",
+    "note": "Bất hợp lý trong đô thị"
+   },
+   {
+    "rule": "Trùng (link_id, thời điểm)",
+    "affected": 0,
+    "action": "loại bỏ bản sau",
+    "note": ""
+   }
+  ],
+  "seconds": 29.6,
+  "monthly": [
+   {
+    "thang": "2024-01",
+    "vao": 996717,
+    "ra": 777896,
+    "giu_lai_%": 78.0,
+    "toc_do_tb_kmh": 65.2
+   },
+   {
+    "thang": "2024-02",
+    "vao": 606855,
+    "ra": 461982,
+    "giu_lai_%": 76.1,
+    "toc_do_tb_kmh": 62.5
+   },
+   {
+    "thang": "2024-03",
+    "vao": 1054554,
+    "ra": 800924,
+    "giu_lai_%": 75.9,
+    "toc_do_tb_kmh": 60.3
+   },
+   {
+    "thang": "2024-04",
+    "vao": 1056771,
+    "ra": 789399,
+    "giu_lai_%": 74.7,
+    "toc_do_tb_kmh": 60.9
+   },
+   {
+    "thang": "2024-05",
+    "vao": 1082408,
+    "ra": 786932,
+    "giu_lai_%": 72.7,
+    "toc_do_tb_kmh": 59.0
+   },
+   {
+    "thang": "2024-06",
+    "vao": 1041105,
+    "ra": 802276,
+    "giu_lai_%": 77.1,
+    "toc_do_tb_kmh": 60.0
+   },
+   {
+    "thang": "2024-07",
+    "vao": 1052885,
+    "ra": 798493,
+    "giu_lai_%": 75.8,
+    "toc_do_tb_kmh": 62.9
+   },
+   {
+    "thang": "2024-08",
+    "vao": 1007758,
+    "ra": 772921,
+    "giu_lai_%": 76.7,
+    "toc_do_tb_kmh": 61.9
+   },
+   {
+    "thang": "2024-09",
+    "vao": 1052806,
+    "ra": 790569,
+    "giu_lai_%": 75.1,
+    "toc_do_tb_kmh": 60.6
+   },
+   {
+    "thang": "2024-10",
+    "vao": 1088596,
+    "ra": 813583,
+    "giu_lai_%": 74.7,
+    "toc_do_tb_kmh": 61.7
+   },
+   {
+    "thang": "2024-11",
+    "vao": 1053440,
+    "ra": 787519,
+    "giu_lai_%": 74.8,
+    "toc_do_tb_kmh": 62.6
+   },
+   {
+    "thang": "2024-12",
+    "vao": 876451,
+    "ra": 665614,
+    "giu_lai_%": 75.9,
+    "toc_do_tb_kmh": 60.3
+   }
+  ]
+ },
+ "links": {
+  "source": "links",
+  "rows_in": 124,
+  "rows_out": 125,
+  "steps": [
+   {
+    "rule": "Tuyến có trong bản ghi nhưng thiếu trong links.csv",
+    "affected": 1,
+    "action": "bổ sung (không có tọa độ)",
+    "note": ""
+   },
+   {
+    "rule": "Tên tuyến lẫn chữ thường",
+    "affected": 51,
+    "action": "viết hoa",
+    "note": ""
+   },
+   {
+    "rule": "link_points bị cắt ở 255 ký tự (giới hạn Socrata)",
+    "affected": 68,
+    "action": "bỏ cặp tọa độ cuối bị cụt",
+    "note": ""
+   },
+   {
+    "rule": "Tuyến không có tọa độ hợp lệ trong New York",
+    "affected": 1,
+    "action": "giữ lại, tọa độ = null",
+    "note": ""
+   },
+   {
+    "rule": "Tọa độ đại diện = trung bình các điểm của tuyến",
+    "affected": 124,
+    "action": "tính mới",
+    "note": ""
+   }
+  ],
+  "seconds": 0.1
+ },
+ "coverage": {
+  "days": 366,
+  "outage_days": 22,
+  "outage_dates": [
+   "2024-01-29",
+   "2024-01-30",
+   "2024-01-31",
+   "2024-02-01",
+   "2024-02-02",
+   "2024-02-03",
+   "2024-02-04",
+   "2024-02-05",
+   "2024-02-06",
+   "2024-02-07",
+   "2024-02-08",
+   "2024-02-09",
+   "2024-02-10",
+   "2024-02-11",
+   "2024-02-12",
+   "2024-03-12",
+   "2024-08-25",
+   "2024-12-24",
+   "2024-12-25",
+   "2024-12-26",
+   "2024-12-27",
+   "2024-12-28"
+  ]
+ }
+}

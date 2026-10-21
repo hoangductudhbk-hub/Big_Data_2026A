@@ -1,0 +1,3 @@
+station_id,district,timestamp,temperature,rainfall,snowfall,weather_condition
+OM_QUEENS,Queens,2025-01-06T08:00:00,-1.5,0,0.4,Snow
+OM_QUEENS,Queens,2025-01-06T09:00:00,-1.0,0,0.2,Snow

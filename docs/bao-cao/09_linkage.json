@@ -1,0 +1,162 @@
+{
+ "generated": "2026-10-13 15:34",
+ "names": 373,
+ "name_rules": [
+  {
+   "luat": "A: Levenshtein ≥ 0,8 (plan)",
+   "so_cap_ghep": 336,
+   "dung": 5,
+   "precision": 0.015,
+   "recall": 1.0,
+   "cap_sai_vi_du": "1 AVENUE ~ 109 AVENUE; 1 AVENUE ~ 11 AVENUE; 1 AVENUE ~ 111 AVENUE; 1 AVENUE ~ 12 AVENUE"
+  },
+  {
+   "luat": "B: A + cùng số + cùng hướng/tầng",
+   "so_cap_ghep": 13,
+   "dung": 5,
+   "precision": 0.385,
+   "recall": 1.0,
+   "cap_sai_vi_du": "ARDEN AVENUE ~ BORDEN AVENUE; CATON AVENUE ~ WATSON AVENUE; COLLEGE POINT BOULEVARD ~ WILLETS POINT BOULEVARD; CROSS BRONX EXPRESSWAY AMSTERDAM AVENUE ~ CROSS BRONX EXPRESSWAY WL LE V AMSTERDAM AVENUE"
+  },
+  {
+   "luat": "C: B + OSA không khoảng trắng ≥ 0,88",
+   "so_cap_ghep": 6,
+   "dung": 5,
+   "precision": 0.833,
+   "recall": 1.0,
+   "cap_sai_vi_du": "CROSS BRONX EXPRESSWAY WL LE V AMSTERDAM AVENUE ~ CROSS BRONX EXPRESSWAY WU LEV AMSTERDAM AVENUE"
+  }
+ ],
+ "name_blocking": [
+  {
+   "blocking": "Không blocking (so mọi cặp)",
+   "so_cap_so_sanh": 69378,
+   "reduction_ratio": 0.0,
+   "pair_completeness": 1.0,
+   "thoi_gian_ms": 1765.6,
+   "bo_lo": ""
+  },
+  {
+   "blocking": "Chữ cái đầu",
+   "so_cap_so_sanh": 3258,
+   "reduction_ratio": 0.953,
+   "pair_completeness": 1.0,
+   "thoi_gian_ms": 104.8,
+   "bo_lo": ""
+  },
+  {
+   "blocking": "2 chữ cái đầu",
+   "so_cap_so_sanh": 985,
+   "reduction_ratio": 0.9858,
+   "pair_completeness": 0.833,
+   "thoi_gian_ms": 37.4,
+   "bo_lo": "WALKER STREET ~ WLAKER STREET"
+  },
+  {
+   "blocking": "Chữ cái đầu + các con số",
+   "so_cap_so_sanh": 2054,
+   "reduction_ratio": 0.9704,
+   "pair_completeness": 1.0,
+   "thoi_gian_ms": 101.7,
+   "bo_lo": ""
+  }
+ ],
+ "name_clusters": [
+  {
+   "ten_chuan": "BLOOMUINGDALE ROAD",
+   "bien_the": "BLLOMINGDALE ROAD / BLOOMINGDALE ROAD / BLOOMUINGDALE ROAD",
+   "so_bien_the": 3
+  },
+  {
+   "ten_chuan": "CROSS BRONX EXPRESSWAY WL LE V AMSTERDAM AVENUE",
+   "bien_the": "CROSS BRONX EXPRESSWAY WL LE V AMSTERDAM AVENUE / CROSS BRONX EXPRESSWAY WU LEV AMSTERDAM AVENUE",
+   "so_bien_the": 2
+  },
+  {
+   "ten_chuan": "DE KALB AVENUE",
+   "bien_the": "DE KALB AVENUE / DEKALB AVENUE",
+   "so_bien_the": 2
+  },
+  {
+   "ten_chuan": "WALKER STREET",
+   "bien_the": "WALKER STREET / WLAKER STREET",
+   "so_bien_the": 2
+  }
+ ],
+ "road_blocking": [
+  {
+   "cach": "Không blocking",
+   "so_cap": 13000,
+   "reduction_ratio": 0.0,
+   "pair_completeness": 1.0,
+   "thoi_gian_s": 1.12,
+   "so_cap_noi": 2
+  },
+  {
+   "cach": "Blocking theo quận",
+   "so_cap": 2444,
+   "reduction_ratio": 0.812,
+   "pair_completeness": 1.0,
+   "thoi_gian_s": 0.26,
+   "so_cap_noi": 2
+  }
+ ],
+ "road_eval": {
+  "predicted": 2,
+  "true": 2,
+  "correct": 2,
+  "precision": 1.0,
+  "recall": 1.0
+ },
+ "road_matches": [
+  {
+   "segmentid": "66035",
+   "link_id": "4616232",
+   "name_score": 1.0,
+   "distance_m": 11.6,
+   "rule": "direct",
+   "link_name": "BQE S 46TH STREET - LEONARD STREET",
+   "street": "BROOKLYN QUEENS EXPWY ET 34 WB"
+  },
+  {
+   "segmentid": "136811",
+   "link_id": "4616332",
+   "name_score": 1.0,
+   "distance_m": 4.7,
+   "rule": "direct",
+   "link_name": "FDR S 63RD - 25TH ST",
+   "street": "F D R DRIVE"
+  },
+  {
+   "segmentid": "66035",
+   "link_id": "4616235",
+   "name_score": 1.0,
+   "distance_m": NaN,
+   "rule": "twin (chiều ngược lại)",
+   "link_name": "BQE N LEONARD STREET - 46TH STREET",
+   "street": "BROOKLYN QUEENS EXPWY ET 34 WB"
+  },
+  {
+   "segmentid": "136811",
+   "link_id": "4616329",
+   "name_score": 1.0,
+   "distance_m": NaN,
+   "rule": "twin (chiều ngược lại)",
+   "link_name": "FDR N 25TH - 63RD ST",
+   "street": "F D R DRIVE"
+  }
+ ],
+ "registry": {
+  "roads": 227,
+  "speed_only": 123,
+  "volume_only": 102,
+  "both": 2,
+  "by_district": {
+   "Queens": 63,
+   "Brooklyn": 52,
+   "Manhattan": 49,
+   "Bronx": 36,
+   "Staten Island": 27
+  }
+ }
+}

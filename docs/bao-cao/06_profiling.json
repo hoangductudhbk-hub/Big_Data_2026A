@@ -1,0 +1,907 @@
+{
+ "weather": {
+  "rows": 43920,
+  "columns": {
+   "station_id": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 5,
+    "top_values": {
+     "OM_MANHATTAN": 8784,
+     "OM_BROOKLYN": 8784,
+     "OM_QUEENS": 8784,
+     "OM_BRONX": 8784,
+     "OM_STATEN_ISLAND": 8784
+    },
+    "numeric_rate": 0.0
+   },
+   "time_utc": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 8784,
+    "top_values": {
+     "2024-12-31 12:00:00": 5,
+     "2024-12-31 11:00:00": 5,
+     "2024-12-31 10:00:00": 5,
+     "2024-12-31 09:00:00": 5,
+     "2024-12-31 08:00:00": 5
+    },
+    "numeric_rate": 0.0
+   },
+   "time_local": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 8783,
+    "top_values": {
+     "2024-11-03 01:00:00": 10,
+     "2024-08-31 19:00:00": 5,
+     "2024-08-31 20:00:00": 5,
+     "2024-08-31 21:00:00": 5,
+     "2024-08-31 22:00:00": 5
+    },
+    "numeric_rate": 0.0
+   },
+   "temperature_2m": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 497,
+    "top_values": {
+     "8.5": 190,
+     "9.7": 188,
+     "22.4": 187,
+     "8.9": 187,
+     "8.6": 185
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": -14.5,
+     "p01": -6.5,
+     "p25": 5.3,
+     "median": 13.3,
+     "p75": 21.0,
+     "p99": 30.8,
+     "max": 36.3,
+     "mean": 13.0125,
+     "std": 9.526
+    }
+   },
+   "precipitation": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 126,
+    "top_values": {
+     "0.0": 37483,
+     "0.1": 1722,
+     "0.2": 910,
+     "0.3": 565,
+     "0.5": 389
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "median": 0.0,
+     "p75": 0.0,
+     "p99": 3.2,
+     "max": 21.4,
+     "mean": 0.1414,
+     "std": 0.7262
+    }
+   },
+   "rain": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 126,
+    "top_values": {
+     "0.0": 37880,
+     "0.1": 1625,
+     "0.2": 862,
+     "0.3": 529,
+     "0.4": 351
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "median": 0.0,
+     "p75": 0.0,
+     "p99": 3.2,
+     "max": 21.4,
+     "mean": 0.1347,
+     "std": 0.7196
+    }
+   },
+   "snowfall": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 34,
+    "top_values": {
+     "0.0": 43376,
+     "0.07": 165,
+     "0.14": 82,
+     "0.21": 59,
+     "0.35": 46
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "median": 0.0,
+     "p75": 0.0,
+     "p99": 0.07,
+     "max": 2.87,
+     "mean": 0.0047,
+     "std": 0.0667
+    }
+   },
+   "weather_code": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 13,
+    "top_values": {
+     "0": 15570,
+     "3": 14718,
+     "1": 4167,
+     "51": 3281,
+     "2": 3028
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "median": 2.0,
+     "p75": 3.0,
+     "p99": 71.0,
+     "max": 75.0,
+     "mean": 9.3695,
+     "std": 19.3199
+    }
+   },
+   "district": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 5,
+    "top_values": {
+     "Manhattan": 8784,
+     "Brooklyn": 8784,
+     "Queens": 8784,
+     "Bronx": 8784,
+     "Staten Island": 8784
+    },
+    "numeric_rate": 0.0
+   },
+   "grid_latitude": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 5,
+    "top_values": {
+     "40.808434": 8784,
+     "40.667835": 8784,
+     "40.738136": 8784,
+     "40.878735": 8784,
+     "40.597538": 8784
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 40.597538,
+     "p01": 40.597538,
+     "p25": 40.667835,
+     "median": 40.738136,
+     "p75": 40.808434,
+     "p99": 40.878735,
+     "max": 40.878735,
+     "mean": 40.7381,
+     "std": 0.0994
+    }
+   },
+   "grid_longitude": {
+    "rows": 43920,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 5,
+    "top_values": {
+     "-74.0199": 8784,
+     "-73.93768": 8784,
+     "-73.78723": 8784,
+     "-73.86914": 8784,
+     "-74.08771": 8784
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": -74.08771,
+     "p01": -74.08771,
+     "p25": -74.0199,
+     "median": -73.93768,
+     "p75": -73.86914,
+     "p99": -73.78723,
+     "max": -73.78723,
+     "mean": -73.9403,
+     "std": 0.1064
+    }
+   }
+  },
+  "checks": [
+   {
+    "name": "Số giờ của OM_BRONX",
+    "count": 8784,
+    "pct": null,
+    "note": "kỳ vọng 8,784"
+   },
+   {
+    "name": "Số giờ của OM_BROOKLYN",
+    "count": 8784,
+    "pct": null,
+    "note": "kỳ vọng 8,784"
+   },
+   {
+    "name": "Số giờ của OM_MANHATTAN",
+    "count": 8784,
+    "pct": null,
+    "note": "kỳ vọng 8,784"
+   },
+   {
+    "name": "Số giờ của OM_QUEENS",
+    "count": 8784,
+    "pct": null,
+    "note": "kỳ vọng 8,784"
+   },
+   {
+    "name": "Số giờ của OM_STATEN_ISLAND",
+    "count": 8784,
+    "pct": null,
+    "note": "kỳ vọng 8,784"
+   },
+   {
+    "name": "time_utc không đọc được",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Trùng (station, time_utc)",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Trùng (station, time_local)",
+    "count": 10,
+    "pct": 0.022768670309653915,
+    "note": "Do lùi giờ mùa đông: 01:00 xuất hiện 2 lần (2024-11-03 01:00)"
+   },
+   {
+    "name": "Giờ địa phương nằm ngoài phạm vi nghiên cứu",
+    "count": 0,
+    "pct": 0.0,
+    "note": "phạm vi 2024-01-01 00:00 → 2024-12-31 23:00"
+   },
+   {
+    "name": "Giờ địa phương bị thiếu (tính cả 5 trạm)",
+    "count": 5,
+    "pct": null,
+    "note": "Ngày đổi giờ 10/03 không có 02:00 nên mỗi trạm thiếu 1 giờ là bình thường"
+   },
+   {
+    "name": "Khoảng trống giữa 2 giờ liên tiếp (theo UTC)",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "temperature_2m rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "precipitation rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "rain rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "snowfall rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "weather_code rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "temperature_2m ngoài [-40, 50] °C",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Lượng mưa/tuyết âm",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "rain > precipitation (mâu thuẫn)",
+    "count": 0,
+    "pct": 0.0,
+    "note": "precipitation = rain + showers + tuyết quy ra nước"
+   }
+  ],
+  "tables": {
+   "Phân bố nhóm thời tiết (sau khi map mã WMO)": "| condition | so_gio | ma_wmo | ti_le_% |\n|---|---|---|---|\n| Clear | 19,737 | 0,1 | 44.94 |\n| Cloudy | 17,746 | 2,3 | 40.41 |\n| Drizzle | 4,638 | 51,53,55 | 10.56 |\n| Rain | 1,255 | 61,63,65 | 2.86 |\n| Snow | 544 | 71,73,75 | 1.24 |",
+   "Khí hậu theo tháng (trung bình 5 quận)": "| month | nhiet_do_tb | mua_mm | tuyet_cm |\n|---|---|---|---|\n| 2024-01 | 1.50 | 149.10 | 12.00 |\n| 2024-02 | 2.20 | 32.80 | 22.60 |\n| 2024-03 | 7.00 | 219.90 | 0.10 |\n| 2024-04 | 10.50 | 112.80 | 0.10 |\n| 2024-05 | 16.70 | 96.50 | 0.00 |\n| 2024-06 | 22.80 | 84.00 | 0.00 |\n| 2024-07 | 25.20 | 103.70 | 0.00 |\n| 2024-08 | 23.20 | 165.00 | 0.00 |\n| 2024-09 | 19.60 | 27.10 | 0.00 |\n| 2024-10 | 14.90 | 7.10 | 0.00 |\n| 2024-11 | 10.10 | 86.10 | 0.50 |\n| 2024-12 | 2.20 | 98.90 | 5.90 |"
+  },
+  "files": [
+   "open_meteo_2024-01-01_2024-12-31.csv"
+  ],
+  "seconds": 0.4
+ },
+ "volume": {
+  "rows": 95203,
+  "columns": {
+   "requestid": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 38,
+    "top_values": {
+     "37574": 17084,
+     "38108": 10560,
+     "36741": 10535,
+     "37280": 6144,
+     "37357": 5472
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 36741.0,
+     "p01": 36741.0,
+     "p25": 37262.0,
+     "median": 37574.0,
+     "p75": 38108.0,
+     "p99": 38599.0,
+     "max": 38782.0,
+     "mean": 37560.2578,
+     "std": 491.7481
+    }
+   },
+   "boro": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 5,
+    "top_values": {
+     "Brooklyn": 33663,
+     "Queens": 27465,
+     "Manhattan": 21772,
+     "Bronx": 11919,
+     "Staten Island": 384
+    },
+    "numeric_rate": 0.0
+   },
+   "yr": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 1,
+    "top_values": {
+     "2024": 95203
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 2024.0,
+     "p01": 2024.0,
+     "p25": 2024.0,
+     "median": 2024.0,
+     "p75": 2024.0,
+     "p99": 2024.0,
+     "max": 2024.0,
+     "mean": 2024.0,
+     "std": 0.0
+    }
+   },
+   "m": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 10,
+    "top_values": {
+     "3": 17978,
+     "6": 14943,
+     "5": 12757,
+     "1": 9888,
+     "10": 9216
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 3.0,
+     "median": 5.0,
+     "p75": 9.0,
+     "p99": 12.0,
+     "max": 12.0,
+     "mean": 5.5572,
+     "std": 3.3471
+    }
+   },
+   "d": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 31,
+    "top_values": {
+     "9": 4896,
+     "10": 4896,
+     "8": 4704,
+     "11": 4416,
+     "7": 4293
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 8.0,
+     "median": 14.0,
+     "p75": 21.0,
+     "p99": 31.0,
+     "max": 31.0,
+     "mean": 14.8882,
+     "std": 8.0128
+    }
+   },
+   "hh": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 24,
+    "top_values": {
+     "7": 3972,
+     "13": 3968,
+     "20": 3968,
+     "15": 3968,
+     "14": 3968
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 6.0,
+     "median": 12.0,
+     "p75": 17.5,
+     "p99": 23.0,
+     "max": 23.0,
+     "mean": 11.5008,
+     "std": 6.9218
+    }
+   },
+   "mm": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 4,
+    "top_values": {
+     "30": 23804,
+     "0": 23802,
+     "15": 23801,
+     "45": 23796
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "median": 15.0,
+     "p75": 30.0,
+     "p99": 45.0,
+     "max": 45.0,
+     "mean": 22.4988,
+     "std": 16.7701
+    }
+   },
+   "vol": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 1394,
+    "top_values": {
+     "0": 1292,
+     "5": 1271,
+     "6": 1238,
+     "4": 1208,
+     "7": 1202
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 22.0,
+     "median": 57.0,
+     "p75": 115.0,
+     "p99": 880.0,
+     "max": 2187.0,
+     "mean": 96.1644,
+     "std": 151.9305
+    }
+   },
+   "segmentid": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 104,
+    "top_values": {
+     "9000515": 2688,
+     "57162": 2688,
+     "71036": 2688,
+     "72887": 2688,
+     "99721": 2503
+    },
+    "numeric_rate": 1.0,
+    "not_numeric": 0,
+    "stats": {
+     "min": 21327.0,
+     "p01": 21371.0,
+     "p25": 45262.0,
+     "median": 76594.0,
+     "p75": 158913.0,
+     "p99": 9012150.0,
+     "max": 9014587.0,
+     "mean": 845399.7695,
+     "std": 2461223.7827
+    }
+   },
+   "wktgeom": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 105,
+    "top_values": {
+     "POINT (1041074.973834683 193690.47360957888)": 2688,
+     "POINT (1038800.1226020441 190235.14743930462)": 2688,
+     "POINT (1007807.3102189016 253610.3799800104)": 2688,
+     "POINT (1002564.5610851326 240983.75683398134)": 2688,
+     "POINT (1041415.7784952964 251299.96499539475)": 2503
+    },
+    "numeric_rate": 0.0
+   },
+   "street": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 85,
+    "top_values": {
+     "LINDEN BOULEVARD": 4416,
+     "NORTHERN BOULEVARD": 3072,
+     "160 STREET": 2688,
+     "109 AVENUE": 2688,
+     "FLATBUSH AVENUE": 2688
+    },
+    "numeric_rate": 0.0
+   },
+   "fromst": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 86,
+    "top_values": {
+     "Dead End": 9866,
+     "Harlem River Shoreline": 5376,
+     "14 Street/canarsie Line": 4222,
+     "3 Street": 4002,
+     "143 Street": 3360
+    },
+    "numeric_rate": 0.0
+   },
+   "tost": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 78,
+    "top_values": {
+     "Dead end": 15154,
+     "Harlem River Shoreline": 6624,
+     "Dead End": 2892,
+     "Pinegrove Street": 2688,
+     "West 61 Street": 2400
+    },
+    "numeric_rate": 0.0
+   },
+   "direction": {
+    "rows": 95203,
+    "empty": 0,
+    "empty_pct": 0.0,
+    "distinct": 4,
+    "top_values": {
+     "NB": 25705,
+     "SB": 24095,
+     "EB": 23610,
+     "WB": 21793
+    },
+    "numeric_rate": 0.0
+   }
+  },
+  "checks": [
+   {
+    "name": "Thời gian (yr,m,d,hh,mm) không hợp lệ",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Phút không thuộc {0,15,30,45}",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Giờ ngoài 0–23",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "vol rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "vol âm",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "vol = 0",
+    "count": 1292,
+    "pct": 1.3571000913836748,
+    "note": "Có thể hợp lệ (ban đêm, đường nhỏ)"
+   },
+   {
+    "name": "vol ngoại lai mạnh (ngoài Q1−3·IQR … Q3+3·IQR)",
+    "count": 2390,
+    "pct": 2.5104250916462716,
+    "note": "ngưỡng trên ≈ 394 xe/15 phút"
+   },
+   {
+    "name": "Trùng toàn bộ dòng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Trùng khóa (segmentid, direction, thời gian)",
+    "count": 379,
+    "pct": 0.39809669863344643,
+    "note": ""
+   },
+   {
+    "name": "…trong đó khác giá trị vol (mâu thuẫn)",
+    "count": 379,
+    "pct": 0.39809669863344643,
+    "note": "Nhiều đợt khảo sát (requestid) đo cùng đoạn, cùng lúc"
+   },
+   {
+    "name": "boro rỗng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "street rỗng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "segmentid rỗng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "wktgeom rỗng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "direction rỗng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "wktgeom không đọc được dạng POINT(x y)",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Tọa độ (sau khi đổi EPSG:2263 → WGS84) nằm ngoài New York",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "street: cùng tên nhưng khác chữ hoa/thường",
+    "count": 0,
+    "pct": null,
+    "note": "số tên có từ 2 cách viết trở lên, ví dụ 'Dead End' / 'Dead end'"
+   },
+   {
+    "name": "fromst: cùng tên nhưng khác chữ hoa/thường",
+    "count": 1,
+    "pct": null,
+    "note": "số tên có từ 2 cách viết trở lên, ví dụ 'Dead End' / 'Dead end'"
+   },
+   {
+    "name": "tost: cùng tên nhưng khác chữ hoa/thường",
+    "count": 1,
+    "pct": null,
+    "note": "số tên có từ 2 cách viết trở lên, ví dụ 'Dead End' / 'Dead end'"
+   },
+   {
+    "name": "segmentid có nhiều hơn 1 tọa độ",
+    "count": 1,
+    "pct": null,
+    "note": ""
+   },
+   {
+    "name": "Khung 15 phút bị thiếu bên trong các đợt đếm",
+    "count": 980,
+    "pct": 1.0229217986722892,
+    "note": "so với số khung kỳ vọng từ lúc bắt đầu đến lúc kết thúc mỗi đợt"
+   }
+  ],
+  "tables": {
+   "Phạm vi bao phủ": "| chi_so | gia_tri |\n|---|---|\n| Số đợt khảo sát (requestid) | 38 |\n| Số đoạn đường (segmentid) | 104 |\n| Số tên phố (street) | 85 |\n| Số ngày trung bình mỗi đợt | 7.00 |\n| Ngày sớm nhất | 2024-01-06 00:00:00 |\n| Ngày muộn nhất | 2024-12-11 23:45:00 |",
+   "Số dòng theo quận (giá trị gốc của cột boro)": "| boro | so_dong |\n|---|---|\n| Brooklyn | 33,663 |\n| Queens | 27,465 |\n| Manhattan | 21,772 |\n| Bronx | 11,919 |\n| Staten Island | 384 |",
+   "Số dòng theo tháng": "| thang | so_dong |\n|---|---|\n| 2024-01 | 9,888 |\n| 2024-02 | 6,606 |\n| 2024-03 | 17,978 |\n| 2024-04 | 7,111 |\n| 2024-05 | 12,757 |\n| 2024-06 | 14,943 |\n| 2024-09 | 4,608 |\n| 2024-10 | 9,216 |\n| 2024-11 | 8,640 |\n| 2024-12 | 3,456 |",
+   "Cách viết hậu tố tên phố không thống nhất (cột street)": "| chuan | cach_viet_gap | so_kieu_viet |\n|---|---|---|\n| AVENUE | AVENUE (36954) | 1 |\n| STREET | STREET (16703) | 1 |\n| BOULEVARD | BOULEVARD (13612) | 1 |\n| PLACE | PLACE (384) | 1 |\n| ROAD | ROAD (4318) | 1 |\n| PARKWAY | PARKWAY (2299) | 1 |"
+  },
+  "files": [
+   "volume_2024.csv"
+  ],
+  "seconds": 1.4
+ },
+ "speeds": {
+  "rows": 11970346,
+  "files": [
+   "speeds_2024-01.csv",
+   "speeds_2024-02.csv",
+   "speeds_2024-03.csv",
+   "speeds_2024-04.csv",
+   "speeds_2024-05.csv",
+   "speeds_2024-06.csv",
+   "speeds_2024-07.csv",
+   "speeds_2024-08.csv",
+   "speeds_2024-09.csv",
+   "speeds_2024-10.csv",
+   "speeds_2024-11.csv",
+   "speeds_2024-12.csv"
+  ],
+  "columns": {},
+  "checks": [
+   {
+    "name": "speed rỗng/không phải số",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "speed âm",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "speed = 0 và travel_time = 0 (bản ghi rỗng)",
+    "count": 2415175,
+    "pct": 20.17631737628971,
+    "note": ""
+   },
+   {
+    "name": "status khác 0",
+    "count": 2922227,
+    "pct": 24.41221832685538,
+    "note": ""
+   },
+   {
+    "name": "speed > 100 mph (bất hợp lý)",
+    "count": 87,
+    "pct": 0.000726796034133015,
+    "note": ""
+   },
+   {
+    "name": "data_as_of không đọc được",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "data_as_of nằm ngoài tháng của file",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Trùng toàn bộ dòng",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Trùng khóa (link_id, data_as_of)",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "link_id không có trong links.csv",
+    "count": 1,
+    "pct": 8.353977403827759e-06,
+    "note": ""
+   },
+   {
+    "name": "link_name khác với tên trong links.csv",
+    "count": 0,
+    "pct": 0.0,
+    "note": ""
+   },
+   {
+    "name": "Số ngày có độ phủ giờ < 50%",
+    "count": 22,
+    "pct": 6.0109289617486334,
+    "note": ""
+   }
+  ],
+  "tables": {
+   "Theo tháng": "| thang | so_dong | so_tuyen | khong_hop_le | ti_le_khong_hop_le_% | trung_khoa | do_phu_gio_% |\n|---|---|---|---|---|---|---|\n| 2024-01 | 996,717 | 122 | 218,821 | 21.95 | 0 | 85.20 |\n| 2024-02 | 606,855 | 123 | 144,873 | 23.87 | 0 | 53.40 |\n| 2024-03 | 1,054,554 | 123 | 253,630 | 24.05 | 0 | 91.10 |\n| 2024-04 | 1,056,771 | 123 | 267,372 | 25.30 | 0 | 92.50 |\n| 2024-05 | 1,082,408 | 125 | 295,473 | 27.30 | 0 | 88.00 |\n| 2024-06 | 1,041,105 | 121 | 238,827 | 22.94 | 0 | 94.40 |\n| 2024-07 | 1,052,885 | 121 | 254,390 | 24.16 | 0 | 90.80 |\n| 2024-08 | 1,007,758 | 122 | 234,837 | 23.30 | 0 | 87.10 |\n| 2024-09 | 1,052,806 | 122 | 262,237 | 24.91 | 0 | 92.90 |\n| 2024-10 | 1,088,596 | 122 | 275,013 | 25.26 | 0 | 92.00 |\n| 2024-11 | 1,053,440 | 122 | 265,921 | 25.24 | 0 | 93.50 |\n| 2024-12 | 876,451 | 122 | 210,833 | 24.06 | 0 | 77.10 |",
+   "Chỉ số tổng hợp": "| chi_so | gia_tri |\n|---|---|\n| Tốc độ hợp lệ: trung vị (mph) | 42.9 |\n| Tốc độ hợp lệ: p01 – p99 (mph) | 3.7 – 63.4 |\n| Khoảng cách giữa 2 lần đo: trung vị (phút) | 5.0 |\n| Khoảng cách: p90 (phút) | 5.0 |\n| Khoảng cách: lớn nhất trong mẫu (giờ) | 455.9 |\n| Số tuyến (link_id) xuất hiện | 125 |\n| Số bản ghi mỗi tuyến: ít nhất – nhiều nhất | 1 – 98,347 |",
+   "Phân bố status": "| status | so_dong |\n|---|---|\n| 0 | 9,048,119 |\n| -101 | 2,922,227 |",
+   "Phân bố borough (giá trị gốc)": "| borough | so_dong |\n|---|---|\n| Queens | 3,633,555 |\n| Manhattan | 2,553,858 |\n| Staten Island | 2,457,480 |\n| Bronx | 2,290,870 |\n| Brooklyn | 1,034,583 |",
+   "Đối chiếu status với bản ghi rỗng (speed = 0 và travel_time = 0)": "| status | speed=0 & travel_time=0 | so_dong |\n|---|---|---|\n| -101 | không | 507,052 |\n| -101 | có | 2,415,175 |\n| 0 | không | 9,048,119 |",
+   "Các khoảng ngày bị mất dữ liệu (độ phủ giờ < 50%)": "| tu_ngay | den_ngay | so_ngay | do_phu_tb_% |\n|---|---|---|---|\n| 2024-01-29 | 2024-02-12 | 15 | 5.10 |\n| 2024-03-12 | 2024-03-12 | 1 | 33.10 |\n| 2024-08-25 | 2024-08-25 | 1 | 0.00 |\n| 2024-12-24 | 2024-12-28 | 5 | 3.20 |",
+   "Các từ xuất hiện nhiều trong link_name (nhiều từ viết tắt)": "| tu | so_tuyen |\n|---|---|\n| S | 54 |\n| AVENUE | 51 |\n| N | 49 |\n| AVE | 34 |\n| W | 28 |\n| ST | 24 |\n| E | 23 |\n| EXIT | 23 |\n| STREET | 21 |\n| SIE | 15 |\n| MANHATTAN | 14 |\n| ANCHORAGE | 13 |\n| QUEENS | 12 |\n| ROAD | 11 |\n| PLAZA | 11 |\n| WSE | 11 |\n| PKWY | 11 |\n| CBE | 10 |\n| LEVEL | 10 |\n| BLVD | 10 |\n| TOLL | 10 |\n| VWE | 9 |\n| AMSTERDAM | 9 |\n| SOUTH | 9 |\n| FDR | 8 |\n| BE | 8 |\n| TBB | 8 |\n| CIP | 8 |\n| TNB | 7 |\n| LIE | 7 |",
+   "Ngày lùi giờ 03/11/2024: số bản ghi theo giờ địa phương": "| gio | so_dong |\n|---|---|\n| 0 | 1,464 |\n| 1 | 2,035 |\n| 2 | 1,464 |\n| 3 | 1,464 |\n| 4 | 1,464 |\n| 5 | 1,464 |\n| 6 | 1,464 |\n| 7 | 1,464 |\n| 8 | 1,464 |\n| 9 | 1,464 |\n| 10 | 1,464 |\n| 11 | 1,464 |\n| 12 | 1,464 |\n| 13 | 1,464 |\n| 14 | 1,464 |\n| 15 | 1,464 |\n| 16 | 1,464 |\n| 17 | 1,464 |\n| 18 | 1,464 |\n| 19 | 1,464 |\n| 20 | 1,464 |\n| 21 | 1,464 |\n| 22 | 1,464 |\n| 23 | 1,464 |"
+  },
+  "seconds": 32.8
+ }
+}

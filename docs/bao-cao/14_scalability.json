@@ -1,0 +1,176 @@
+{
+ "generated": "2026-10-13 16:23",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "csv": [
+  {
+   "du_lieu": "CSV 1 tháng",
+   "size_mb": 98.8,
+   "rows": 817609,
+   "groups": 5115,
+   "first_s": 4.85,
+   "best_s": 1.29,
+   "input_mb": 99.0,
+   "shuffle_mb": 0.09,
+   "tasks": 2,
+   "peak_mem_moi_task_mb": 33.8,
+   "trieu_dong_moi_s": 0.63
+  },
+  {
+   "du_lieu": "CSV 3 tháng",
+   "size_mb": 263.7,
+   "rows": 2153618,
+   "groups": 5230,
+   "first_s": 3.79,
+   "best_s": 3.59,
+   "input_mb": 263.7,
+   "shuffle_mb": 0.14,
+   "tasks": 1,
+   "peak_mem_moi_task_mb": 33.8,
+   "trieu_dong_moi_s": 0.6
+  },
+  {
+   "du_lieu": "CSV 6 tháng",
+   "size_mb": 579.2,
+   "rows": 4664643,
+   "groups": 5233,
+   "first_s": 6.55,
+   "best_s": 6.55,
+   "input_mb": 579.2,
+   "shuffle_mb": 0.28,
+   "tasks": 6,
+   "peak_mem_moi_task_mb": 33.8,
+   "trieu_dong_moi_s": 0.71
+  },
+  {
+   "du_lieu": "CSV 12 tháng",
+   "size_mb": 1185.2,
+   "rows": 9555071,
+   "groups": 5280,
+   "first_s": 13.22,
+   "best_s": 13.22,
+   "input_mb": 1185.2,
+   "shuffle_mb": 0.57,
+   "tasks": 12,
+   "peak_mem_moi_task_mb": 33.8,
+   "trieu_dong_moi_s": 0.72
+  }
+ ],
+ "parquet": [
+  {
+   "du_lieu": "Parquet ×1",
+   "size_mb": 22.9,
+   "rows": 9048108,
+   "groups": 5248,
+   "first_s": 4.46,
+   "best_s": 1.43,
+   "input_mb": 13.8,
+   "shuffle_mb": 0.06,
+   "tasks": 1,
+   "peak_mem_moi_task_mb": 33.8,
+   "trieu_dong_moi_s": 6.33
+  },
+  {
+   "du_lieu": "Parquet ×2",
+   "size_mb": 47.9,
+   "rows": 18096216,
+   "groups": 10496,
+   "first_s": 1.6,
+   "best_s": 1.57,
+   "input_mb": 29.5,
+   "shuffle_mb": 0.12,
+   "tasks": 1,
+   "peak_mem_moi_task_mb": 34.1,
+   "trieu_dong_moi_s": 11.53
+  },
+  {
+   "du_lieu": "Parquet ×4",
+   "size_mb": 97.5,
+   "rows": 36192432,
+   "groups": 20992,
+   "first_s": 2.58,
+   "best_s": 2.58,
+   "input_mb": 60.8,
+   "shuffle_mb": 0.25,
+   "tasks": 1,
+   "peak_mem_moi_task_mb": 34.6,
+   "trieu_dong_moi_s": 14.03
+  },
+  {
+   "du_lieu": "Parquet ×8",
+   "size_mb": 196.3,
+   "rows": 72384864,
+   "groups": 41984,
+   "first_s": 5.23,
+   "best_s": 5.23,
+   "input_mb": 123.0,
+   "shuffle_mb": 0.5,
+   "tasks": 1,
+   "peak_mem_moi_task_mb": 35.7,
+   "trieu_dong_moi_s": 13.84
+  },
+  {
+   "du_lieu": "Parquet ×16",
+   "size_mb": 393.2,
+   "rows": 144769728,
+   "groups": 83968,
+   "first_s": 10.9,
+   "best_s": 10.9,
+   "input_mb": 246.9,
+   "shuffle_mb": 0.99,
+   "tasks": 1,
+   "peak_mem_moi_task_mb": 37.7,
+   "trieu_dong_moi_s": 13.28
+  }
+ ],
+ "linear_fit": [
+  {
+   "du_lieu": "CSV gốc",
+   "chi_phi_co_dinh_s": 0.39,
+   "s_moi_trieu_dong": 1.343,
+   "r2": 0.9982
+  },
+  {
+   "du_lieu": "Parquet",
+   "chi_phi_co_dinh_s": 0.32,
+   "s_moi_trieu_dong": 0.072,
+   "r2": 0.9929
+  }
+ ],
+ "format": [
+  {
+   "dinh_dang": "CSV 12 tháng (gốc)",
+   "size_mb": 1185.2,
+   "rows": 9555071,
+   "best_s": 13.22
+  },
+  {
+   "dinh_dang": "Parquet ×1 (đã làm sạch)",
+   "size_mb": 22.9,
+   "rows": 9048108,
+   "best_s": 1.43
+  }
+ ],
+ "cores": [
+  {
+   "du_lieu": "CSV 12 tháng",
+   "rows": 9555071,
+   "local_1_s": 20.51,
+   "local_2_s": 13.22,
+   "speed_up": 1.55,
+   "hieu_suat_song_song_pct": 77.6
+  },
+  {
+   "du_lieu": "Parquet ×8",
+   "rows": 72384864,
+   "local_1_s": 9.35,
+   "local_2_s": 5.23,
+   "speed_up": 1.79,
+   "hieu_suat_song_song_pct": 89.4
+  }
+ ]
+}

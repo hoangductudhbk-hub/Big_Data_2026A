@@ -1,0 +1,24 @@
+[
+ {
+  "du_lieu": "CSV 12 tháng",
+  "rows": 9555071,
+  "groups": 5280,
+  "first_s": 23.7,
+  "best_s": 20.51,
+  "input_mb": 1185.2,
+  "shuffle_mb": 0.57,
+  "tasks": 12,
+  "peak_mem_moi_task_mb": 67.4
+ },
+ {
+  "du_lieu": "Parquet ×8",
+  "rows": 72384864,
+  "groups": 41984,
+  "first_s": 10.06,
+  "best_s": 9.35,
+  "input_mb": 123.0,
+  "shuffle_mb": 0.5,
+  "tasks": 1,
+  "peak_mem_moi_task_mb": 69.2
+ }
+]

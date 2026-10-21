@@ -1,0 +1,475 @@
+{
+ "generated": "2026-10-13 22:30",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "n_speed_records": 785767,
+ "by_condition": [
+  {
+   "weather_condition": "Clear",
+   "n": 353216,
+   "so_ngay": 303,
+   "tb_tho": 61.63,
+   "thay_doi_tho_pct": 0.0,
+   "thay_doi_kiem_soat_pct": -0.44,
+   "kiem_soat_them_thang_pct": -0.46,
+   "ktc95_pct": 0.09
+  },
+  {
+   "weather_condition": "Cloudy",
+   "n": 315209,
+   "so_ngay": 327,
+   "tb_tho": 61.23,
+   "thay_doi_tho_pct": -0.64,
+   "thay_doi_kiem_soat_pct": 0.49,
+   "kiem_soat_them_thang_pct": 0.52,
+   "ktc95_pct": 0.09
+  },
+  {
+   "weather_condition": "Drizzle",
+   "n": 83330,
+   "so_ngay": 193,
+   "tb_tho": 58.32,
+   "thay_doi_tho_pct": -5.36,
+   "thay_doi_kiem_soat_pct": -2.66,
+   "kiem_soat_them_thang_pct": -2.35,
+   "ktc95_pct": 0.18
+  },
+  {
+   "weather_condition": "Rain",
+   "n": 23421,
+   "so_ngay": 96,
+   "tb_tho": 57.55,
+   "thay_doi_tho_pct": -6.61,
+   "thay_doi_kiem_soat_pct": -4.79,
+   "kiem_soat_them_thang_pct": -4.56,
+   "ktc95_pct": 0.36
+  },
+  {
+   "weather_condition": "Snow",
+   "n": 10591,
+   "so_ngay": 27,
+   "tb_tho": 61.97,
+   "thay_doi_tho_pct": 0.57,
+   "thay_doi_kiem_soat_pct": 5.79,
+   "kiem_soat_them_thang_pct": -0.07,
+   "ktc95_pct": 0.77
+  }
+ ],
+ "by_rain": [
+  {
+   "rain_bin": "0. Không mưa",
+   "n": 668425,
+   "so_ngay": 344,
+   "tb_tho": 61.44,
+   "thay_doi_tho_pct": 0.0,
+   "thay_doi_kiem_soat_pct": 0.0,
+   "kiem_soat_them_thang_pct": 0.0,
+   "ktc95_pct": 0.07
+  },
+  {
+   "rain_bin": "1. 0–0,5 mm/h (rất nhẹ)",
+   "n": 65466,
+   "so_ngay": 192,
+   "tb_tho": 58.72,
+   "thay_doi_tho_pct": -4.42,
+   "thay_doi_kiem_soat_pct": -2.15,
+   "kiem_soat_them_thang_pct": -1.57,
+   "ktc95_pct": 0.21
+  },
+  {
+   "rain_bin": "2. 0,5–2 mm/h (nhẹ)",
+   "n": 26249,
+   "so_ngay": 124,
+   "tb_tho": 56.77,
+   "thay_doi_tho_pct": -7.59,
+   "thay_doi_kiem_soat_pct": -4.83,
+   "kiem_soat_them_thang_pct": -5.14,
+   "ktc95_pct": 0.32
+  },
+  {
+   "rain_bin": "3. 2–5 mm/h (vừa)",
+   "n": 11082,
+   "so_ngay": 77,
+   "tb_tho": 57.7,
+   "thay_doi_tho_pct": -6.09,
+   "thay_doi_kiem_soat_pct": -5.19,
+   "kiem_soat_them_thang_pct": -4.74,
+   "ktc95_pct": 0.57
+  },
+  {
+   "rain_bin": "4. > 5 mm/h (to)",
+   "n": 3954,
+   "so_ngay": 41,
+   "tb_tho": 59.15,
+   "thay_doi_tho_pct": -3.72,
+   "thay_doi_kiem_soat_pct": -2.22,
+   "kiem_soat_them_thang_pct": -3.17,
+   "ktc95_pct": 0.83
+  }
+ ],
+ "rain_by_period": [
+  {
+   "period": "Cao điểm ngày thường",
+   "is_rain": "Không mưa / mưa rất nhẹ",
+   "n": 127886,
+   "thay_doi_kiem_soat_pct": -0.42,
+   "kiem_soat_them_thang_pct": -0.42
+  },
+  {
+   "period": "Cao điểm ngày thường",
+   "is_rain": "Mưa > 0,5 mm/h",
+   "n": 7107,
+   "thay_doi_kiem_soat_pct": -7.44,
+   "kiem_soat_them_thang_pct": -8.42
+  },
+  {
+   "period": "Ngoài cao điểm",
+   "is_rain": "Không mưa / mưa rất nhẹ",
+   "n": 606005,
+   "thay_doi_kiem_soat_pct": -0.14,
+   "kiem_soat_them_thang_pct": -0.08
+  },
+  {
+   "period": "Ngoài cao điểm",
+   "is_rain": "Mưa > 0,5 mm/h",
+   "n": 34178,
+   "thay_doi_kiem_soat_pct": -4.1,
+   "kiem_soat_them_thang_pct": -4.09
+  }
+ ],
+ "by_snow": [
+  {
+   "snow_bin": "0. Không tuyết",
+   "n": 775176,
+   "so_ngay": 344,
+   "tb_tho": 60.99,
+   "thay_doi_tho_pct": 0.0,
+   "thay_doi_kiem_soat_pct": -0.43,
+   "kiem_soat_them_thang_pct": -0.39,
+   "ktc95_pct": 0.06
+  },
+  {
+   "snow_bin": "1. 0–0,5 cm/h",
+   "n": 8678,
+   "so_ngay": 26,
+   "tb_tho": 61.71,
+   "thay_doi_tho_pct": 1.18,
+   "thay_doi_kiem_soat_pct": 4.5,
+   "kiem_soat_them_thang_pct": -2.14,
+   "ktc95_pct": 0.78
+  },
+  {
+   "snow_bin": "2. 0,5–1 cm/h",
+   "n": 907,
+   "so_ngay": 10,
+   "tb_tho": 64.23,
+   "thay_doi_tho_pct": 5.32,
+   "thay_doi_kiem_soat_pct": 5.08,
+   "kiem_soat_them_thang_pct": 2.05,
+   "ktc95_pct": 2.82
+  },
+  {
+   "snow_bin": "3. > 1 cm/h",
+   "n": 1006,
+   "so_ngay": 3,
+   "tb_tho": 62.24,
+   "thay_doi_tho_pct": 2.06,
+   "thay_doi_kiem_soat_pct": 17.55,
+   "kiem_soat_them_thang_pct": 15.1,
+   "ktc95_pct": 3.73
+  }
+ ],
+ "snow_mix": [
+  {
+   "grp": "Mọi giờ khác",
+   "n": 775176,
+   "pct_0h_6h": 23.4,
+   "pct_cuoi_tuan": 32.2,
+   "pct_cao_diem": 17.4,
+   "pct_staten_island": 17.9,
+   "pct_manhattan": 17.5,
+   "baseline_tb": 61.26
+  },
+  {
+   "grp": "Giờ có tuyết",
+   "n": 10591,
+   "pct_0h_6h": 27.3,
+   "pct_cuoi_tuan": 39.0,
+   "pct_cao_diem": 15.8,
+   "pct_staten_island": 17.0,
+   "pct_manhattan": 20.8,
+   "baseline_tb": 61.86
+  }
+ ],
+ "snow_days": [
+  {
+   "date": "2024-02-13",
+   "tuyet_cm_ngay": 16.0,
+   "tuyet_max_cm_h": 2.87,
+   "day_type": "weekday",
+   "toc_do_ca_ngay_pct": 29.9,
+   "kiem_soat_them_thang_pct": 25.06
+  },
+  {
+   "date": "2024-01-06",
+   "tuyet_cm_ngay": 3.9,
+   "tuyet_max_cm_h": 2.1,
+   "day_type": "weekend",
+   "toc_do_ca_ngay_pct": 14.83,
+   "kiem_soat_them_thang_pct": 0.49
+  },
+  {
+   "date": "2024-02-17",
+   "tuyet_cm_ngay": 3.9,
+   "tuyet_max_cm_h": 0.91,
+   "day_type": "weekend",
+   "toc_do_ca_ngay_pct": 2.89,
+   "kiem_soat_them_thang_pct": 4.07
+  },
+  {
+   "date": "2024-01-16",
+   "tuyet_cm_ngay": 3.5,
+   "tuyet_max_cm_h": 0.56,
+   "day_type": "weekday",
+   "toc_do_ca_ngay_pct": 8.84,
+   "kiem_soat_them_thang_pct": -2.31
+  },
+  {
+   "date": "2024-12-21",
+   "tuyet_cm_ngay": 2.3,
+   "tuyet_max_cm_h": 0.56,
+   "day_type": "weekend",
+   "toc_do_ca_ngay_pct": -9.2,
+   "kiem_soat_them_thang_pct": -8.14
+  },
+  {
+   "date": "2024-01-19",
+   "tuyet_cm_ngay": 1.7,
+   "tuyet_max_cm_h": 0.28,
+   "day_type": "weekday",
+   "toc_do_ca_ngay_pct": 13.99,
+   "kiem_soat_them_thang_pct": 3.34
+  },
+  {
+   "date": "2024-01-07",
+   "tuyet_cm_ngay": 1.1,
+   "tuyet_max_cm_h": 0.84,
+   "day_type": "weekend",
+   "toc_do_ca_ngay_pct": 23.52,
+   "kiem_soat_them_thang_pct": 7.27
+  },
+  {
+   "date": "2024-12-05",
+   "tuyet_cm_ngay": 1.1,
+   "tuyet_max_cm_h": 0.84,
+   "day_type": "weekday",
+   "toc_do_ca_ngay_pct": -5.62,
+   "kiem_soat_them_thang_pct": -0.07
+  }
+ ],
+ "by_temperature": [
+  {
+   "temp_bin": "1. < 0 °C",
+   "n": 67325,
+   "so_ngay": 57,
+   "tb_tho": 66.14,
+   "thay_doi_tho_pct": 6.81,
+   "thay_doi_kiem_soat_pct": 3.55,
+   "kiem_soat_them_thang_pct": -0.69,
+   "ktc95_pct": 0.22
+  },
+  {
+   "temp_bin": "2. 0–10 °C",
+   "n": 228777,
+   "so_ngay": 173,
+   "tb_tho": 62.25,
+   "thay_doi_tho_pct": 0.52,
+   "thay_doi_kiem_soat_pct": 1.53,
+   "kiem_soat_them_thang_pct": -1.16,
+   "ktc95_pct": 0.12
+  },
+  {
+   "temp_bin": "3. 10–20 °C",
+   "n": 251749,
+   "so_ngay": 229,
+   "tb_tho": 61.93,
+   "thay_doi_tho_pct": 0.0,
+   "thay_doi_kiem_soat_pct": -1.58,
+   "kiem_soat_them_thang_pct": -0.19,
+   "ktc95_pct": 0.1
+  },
+  {
+   "temp_bin": "4. 20–30 °C",
+   "n": 224407,
+   "so_ngay": 179,
+   "tb_tho": 57.76,
+   "thay_doi_tho_pct": -6.73,
+   "thay_doi_kiem_soat_pct": -1.96,
+   "kiem_soat_them_thang_pct": 0.25,
+   "ktc95_pct": 0.11
+  },
+  {
+   "temp_bin": "5. ≥ 30 °C",
+   "n": 13509,
+   "so_ngay": 41,
+   "tb_tho": 50.98,
+   "thay_doi_tho_pct": -17.68,
+   "thay_doi_kiem_soat_pct": -1.82,
+   "kiem_soat_them_thang_pct": -0.22,
+   "ktc95_pct": 0.49
+  }
+ ],
+ "volume_by_rain": [
+  {
+   "rain_bin": "0. Không mưa",
+   "n": 5327,
+   "so_ngay": 149,
+   "tb_tho": 484.1,
+   "thay_doi_tho_pct": 0.0,
+   "thay_doi_kiem_soat_pct": 0.0,
+   "kiem_soat_them_thang_pct": 0.0,
+   "ktc95_pct": 0.46
+  },
+  {
+   "rain_bin": "1. 0–0,5 mm/h (rất nhẹ)",
+   "n": 263,
+   "so_ngay": 45,
+   "tb_tho": 330.14,
+   "thay_doi_tho_pct": -31.8,
+   "thay_doi_kiem_soat_pct": -0.16,
+   "kiem_soat_them_thang_pct": 0.98,
+   "ktc95_pct": 2.04
+  },
+  {
+   "rain_bin": "2. 0,5–2 mm/h (nhẹ)",
+   "n": 161,
+   "so_ngay": 27,
+   "tb_tho": 386.56,
+   "thay_doi_tho_pct": -20.15,
+   "thay_doi_kiem_soat_pct": -1.89,
+   "kiem_soat_them_thang_pct": -1.29,
+   "ktc95_pct": 2.6
+  },
+  {
+   "rain_bin": "3. 2–5 mm/h (vừa)",
+   "n": 61,
+   "so_ngay": 17,
+   "tb_tho": 383.1,
+   "thay_doi_tho_pct": -20.86,
+   "thay_doi_kiem_soat_pct": -3.8,
+   "kiem_soat_them_thang_pct": -1.19,
+   "ktc95_pct": 4.01
+  },
+  {
+   "rain_bin": "4. > 5 mm/h (to)",
+   "n": 4,
+   "so_ngay": 4,
+   "tb_tho": 339.0,
+   "thay_doi_tho_pct": -29.97,
+   "thay_doi_kiem_soat_pct": -17.98,
+   "kiem_soat_them_thang_pct": 5.62,
+   "ktc95_pct": 24.59
+  }
+ ],
+ "correlation": [
+  {
+   "cap_bien": "rainfall – avg_speed (từng bản ghi, thô)",
+   "pearson": -0.022
+  },
+  {
+   "cap_bien": "rainfall – speed_idx (từng bản ghi, có kiểm soát)",
+   "pearson": -0.023
+  },
+  {
+   "cap_bien": "rainfall – speed_idx (TB toàn thành phố mỗi giờ)",
+   "pearson": -0.073
+  },
+  {
+   "cap_bien": "snowfall – speed_idx (TB toàn thành phố mỗi giờ)",
+   "pearson": 0.069
+  },
+  {
+   "cap_bien": "temperature – speed_idx (TB toàn thành phố mỗi giờ)",
+   "pearson": -0.193
+  }
+ ],
+ "city_hours": 8185,
+ "storm_days": [
+  {
+   "date": "2024-03-23",
+   "mua_mm_ngay": 64.0,
+   "mua_max_mm_h": 13.9,
+   "day_type": "weekend",
+   "thay_doi_toc_do_ca_ngay_pct": 2.77,
+   "kiem_soat_them_thang_pct": 1.13,
+   "n": 2356
+  },
+  {
+   "date": "2024-11-21",
+   "mua_mm_ngay": 47.5,
+   "mua_max_mm_h": 7.8,
+   "day_type": "weekday",
+   "thay_doi_toc_do_ca_ngay_pct": -13.65,
+   "kiem_soat_them_thang_pct": -12.05,
+   "n": 2327
+  },
+  {
+   "date": "2024-12-11",
+   "mua_mm_ngay": 39.2,
+   "mua_max_mm_h": 4.9,
+   "day_type": "weekday",
+   "thay_doi_toc_do_ca_ngay_pct": -9.23,
+   "kiem_soat_them_thang_pct": -3.33,
+   "n": 1591
+  },
+  {
+   "date": "2024-03-09",
+   "mua_mm_ngay": 36.9,
+   "mua_max_mm_h": 16.1,
+   "day_type": "weekend",
+   "thay_doi_toc_do_ca_ngay_pct": -5.67,
+   "kiem_soat_them_thang_pct": -7.97,
+   "n": 2323
+  },
+  {
+   "date": "2024-08-06",
+   "mua_mm_ngay": 36.4,
+   "mua_max_mm_h": 20.3,
+   "day_type": "weekday",
+   "thay_doi_toc_do_ca_ngay_pct": -1.55,
+   "kiem_soat_them_thang_pct": -1.99,
+   "n": 2292
+  },
+  {
+   "date": "2024-01-09",
+   "mua_mm_ngay": 36.1,
+   "mua_max_mm_h": 8.3,
+   "day_type": "weekday",
+   "thay_doi_toc_do_ca_ngay_pct": 3.59,
+   "kiem_soat_them_thang_pct": -6.21,
+   "n": 2373
+  },
+  {
+   "date": "2024-03-06",
+   "mua_mm_ngay": 34.9,
+   "mua_max_mm_h": 11.4,
+   "day_type": "weekday",
+   "thay_doi_toc_do_ca_ngay_pct": -4.2,
+   "kiem_soat_them_thang_pct": -6.47,
+   "n": 2305
+  },
+  {
+   "date": "2024-05-27",
+   "mua_mm_ngay": 30.2,
+   "mua_max_mm_h": 21.4,
+   "day_type": "weekend",
+   "thay_doi_toc_do_ca_ngay_pct": 9.0,
+   "kiem_soat_them_thang_pct": 14.96,
+   "n": 2199
+  }
+ ]
+}

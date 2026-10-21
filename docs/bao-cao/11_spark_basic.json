@@ -1,0 +1,248 @@
+{
+ "generated": "2026-10-13 16:01",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "lazy": {
+  "define_ms": 149.7,
+  "action_s": 2.624
+ },
+ "bqe_peak": [
+  {
+   "toc_do_tb_kmh": 40.4,
+   "so_tuyen": 7
+  }
+ ],
+ "join_by_district": [
+  {
+   "district": "Bronx",
+   "so_ban_ghi": 1910929,
+   "toc_do_tb_kmh": 62.1
+  },
+  {
+   "district": "Brooklyn",
+   "so_ban_ghi": 622966,
+   "toc_do_tb_kmh": 54.8
+  },
+  {
+   "district": "Manhattan",
+   "so_ban_ghi": 1468656,
+   "toc_do_tb_kmh": 40.8
+  },
+  {
+   "district": "Queens",
+   "so_ban_ghi": 3368987,
+   "toc_do_tb_kmh": 62.4
+  },
+  {
+   "district": "Staten Island",
+   "so_ban_ghi": 1676570,
+   "toc_do_tb_kmh": 79.6
+  }
+ ],
+ "join": {
+  "broadcast": {
+   "first_s": 1.681,
+   "best_s": 1.269
+  },
+  "sortmerge": {
+   "first_s": 5.635,
+   "best_s": 4.194
+  },
+  "speedup": 3.3
+ },
+ "hourly_sample": [
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 3,
+   "toc_do_tb_kmh": 74.6,
+   "luu_luong_tb": 173.0,
+   "n_toc_do": 8785,
+   "n_luu_luong": 210
+  },
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 6,
+   "toc_do_tb_kmh": 78.3,
+   "luu_luong_tb": 215.0,
+   "n_toc_do": 9290,
+   "n_luu_luong": 209
+  },
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 8,
+   "toc_do_tb_kmh": 72.2,
+   "luu_luong_tb": 393.0,
+   "n_toc_do": 9542,
+   "n_luu_luong": 211
+  },
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 12,
+   "toc_do_tb_kmh": 56.9,
+   "luu_luong_tb": 627.0,
+   "n_toc_do": 9572,
+   "n_luu_luong": 212
+  },
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 17,
+   "toc_do_tb_kmh": 50.8,
+   "luu_luong_tb": 653.0,
+   "n_toc_do": 9709,
+   "n_luu_luong": 211
+  },
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 20,
+   "toc_do_tb_kmh": 57.4,
+   "luu_luong_tb": 541.0,
+   "n_toc_do": 9583,
+   "n_luu_luong": 212
+  },
+  {
+   "loai_ngay": "cuối tuần",
+   "hour": 23,
+   "toc_do_tb_kmh": 67.3,
+   "luu_luong_tb": 364.0,
+   "n_toc_do": 9353,
+   "n_luu_luong": 210
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 3,
+   "toc_do_tb_kmh": 78.3,
+   "luu_luong_tb": 111.0,
+   "n_toc_do": 20850,
+   "n_luu_luong": 478
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 6,
+   "toc_do_tb_kmh": 62.5,
+   "luu_luong_tb": 553.0,
+   "n_toc_do": 23755,
+   "n_luu_luong": 477
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 8,
+   "toc_do_tb_kmh": 52.4,
+   "luu_luong_tb": 758.0,
+   "n_toc_do": 24041,
+   "n_luu_luong": 475
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 12,
+   "toc_do_tb_kmh": 55.5,
+   "luu_luong_tb": 695.0,
+   "n_toc_do": 24236,
+   "n_luu_luong": 478
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 17,
+   "toc_do_tb_kmh": 44.2,
+   "luu_luong_tb": 824.0,
+   "n_toc_do": 24181,
+   "n_luu_luong": 478
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 20,
+   "toc_do_tb_kmh": 62.5,
+   "luu_luong_tb": 620.0,
+   "n_toc_do": 23851,
+   "n_luu_luong": 478
+  },
+  {
+   "loai_ngay": "ngày thường",
+   "hour": 23,
+   "toc_do_tb_kmh": 66.3,
+   "luu_luong_tb": 409.0,
+   "n_toc_do": 23391,
+   "n_luu_luong": 478
+  }
+ ],
+ "slowest_roads": [
+  {
+   "road_id": "L4616337",
+   "road_name": "11 AVENUE",
+   "district": "Manhattan",
+   "toc_do_tb_kmh": 5.3,
+   "so_gio": 204
+  },
+  {
+   "road_id": "L4616338",
+   "road_name": "12 AVENUE",
+   "district": "Manhattan",
+   "toc_do_tb_kmh": 5.4,
+   "so_gio": 203
+  },
+  {
+   "road_id": "L4616340",
+   "road_name": "BROOKLYN QUEENS EXPRESSWAY",
+   "district": "Manhattan",
+   "toc_do_tb_kmh": 6.8,
+   "so_gio": 735
+  },
+  {
+   "road_id": "L4616223",
+   "road_name": "GOWANUS EXPRESSWAY",
+   "district": "Brooklyn",
+   "toc_do_tb_kmh": 8.8,
+   "so_gio": 738
+  },
+  {
+   "road_id": "L4620314",
+   "road_name": "MAJOR DEEGAN EXPRESSWAY",
+   "district": "Bronx",
+   "toc_do_tb_kmh": 12.0,
+   "so_gio": 736
+  },
+  {
+   "road_id": "L4616357",
+   "road_name": "BELT PARKWAY",
+   "district": "Queens",
+   "toc_do_tb_kmh": 12.1,
+   "so_gio": 711
+  },
+  {
+   "road_id": "L4616271",
+   "road_name": "BROOKLYN QUEENS EXPRESSWAY",
+   "district": "Brooklyn",
+   "toc_do_tb_kmh": 13.6,
+   "so_gio": 641
+  },
+  {
+   "road_id": "L4620330",
+   "road_name": "MAJOR DEEGAN EXPRESSWAY",
+   "district": "Bronx",
+   "toc_do_tb_kmh": 13.8,
+   "so_gio": 737
+  },
+  {
+   "road_id": "L4620332",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "toc_do_tb_kmh": 15.7,
+   "so_gio": 737
+  },
+  {
+   "road_id": "L4620331",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "toc_do_tb_kmh": 15.9,
+   "so_gio": 722
+  }
+ ],
+ "sql_equal": true,
+ "cache": {
+  "no_cache_s": 0.524,
+  "cache_s": 0.178
+ }
+}

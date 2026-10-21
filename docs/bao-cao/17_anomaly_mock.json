@@ -1,0 +1,690 @@
+{
+ "generated": "2026-10-14 05:33",
+ "env": {
+  "spark": "4.0.1",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/mock/integrated_traffic"
+ },
+ "methods": [
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Toàn cục theo đường",
+   "ban_ghi": 1170662,
+   "duoc_cham_z": 1170662,
+   "bat_thuong": 22,
+   "ti_le_pct": 0.002,
+   "thap_bat_thuong": 22,
+   "cao_bat_thuong": 0,
+   "trong_gio_cao_diem_pct": 95.5
+  },
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "ban_ghi": 1170662,
+   "duoc_cham_z": 1170662,
+   "bat_thuong": 11906,
+   "ti_le_pct": 1.017,
+   "thap_bat_thuong": 11487,
+   "cao_bat_thuong": 419,
+   "trong_gio_cao_diem_pct": 9.7
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Toàn cục theo đường",
+   "ban_ghi": 791922,
+   "duoc_cham_z": 791922,
+   "bat_thuong": 450,
+   "ti_le_pct": 0.057,
+   "thap_bat_thuong": 0,
+   "cao_bat_thuong": 450,
+   "trong_gio_cao_diem_pct": 29.6
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "ban_ghi": 791922,
+   "duoc_cham_z": 791922,
+   "bat_thuong": 6188,
+   "ti_le_pct": 0.781,
+   "thap_bat_thuong": 812,
+   "cao_bat_thuong": 5376,
+   "trong_gio_cao_diem_pct": 8.8
+  }
+ ],
+ "validation": [
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Toàn cục theo đường",
+   "nguong": 3.0,
+   "cai_san": 1205,
+   "bao": 22,
+   "dung": 22,
+   "precision": 1.0,
+   "recall": 0.018,
+   "f1": 0.036,
+   "bao_thua_luc_mua_tuyet_pct": 0.0
+  },
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 3.0,
+   "cai_san": 1205,
+   "bao": 11906,
+   "dung": 1175,
+   "precision": 0.099,
+   "recall": 0.975,
+   "f1": 0.179,
+   "bao_thua_luc_mua_tuyet_pct": 95.1
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Toàn cục theo đường",
+   "nguong": 3.0,
+   "cai_san": 746,
+   "bao": 450,
+   "dung": 450,
+   "precision": 1.0,
+   "recall": 0.603,
+   "f1": 0.753,
+   "bao_thua_luc_mua_tuyet_pct": 0.0
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 3.0,
+   "cai_san": 746,
+   "bao": 6188,
+   "dung": 746,
+   "precision": 0.121,
+   "recall": 1.0,
+   "f1": 0.215,
+   "bao_thua_luc_mua_tuyet_pct": 17.3
+  }
+ ],
+ "threshold_sweep": [
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 3.0,
+   "cai_san": 1205,
+   "bao": 11906,
+   "dung": 1175,
+   "precision": 0.099,
+   "recall": 0.975,
+   "f1": 0.179,
+   "bao_thua_luc_mua_tuyet_pct": 95.1
+  },
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 4.0,
+   "cai_san": 1205,
+   "bao": 2094,
+   "dung": 1125,
+   "precision": 0.537,
+   "recall": 0.934,
+   "f1": 0.682,
+   "bao_thua_luc_mua_tuyet_pct": 98.3
+  },
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 5.0,
+   "cai_san": 1205,
+   "bao": 1112,
+   "dung": 1075,
+   "precision": 0.967,
+   "recall": 0.892,
+   "f1": 0.928,
+   "bao_thua_luc_mua_tuyet_pct": 97.3
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 3.0,
+   "cai_san": 746,
+   "bao": 6188,
+   "dung": 746,
+   "precision": 0.121,
+   "recall": 1.0,
+   "f1": 0.215,
+   "bao_thua_luc_mua_tuyet_pct": 17.3
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 4.0,
+   "cai_san": 746,
+   "bao": 879,
+   "dung": 745,
+   "precision": 0.848,
+   "recall": 0.999,
+   "f1": 0.917,
+   "bao_thua_luc_mua_tuyet_pct": 26.1
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "nguong": 5.0,
+   "cai_san": 746,
+   "bao": 752,
+   "dung": 745,
+   "precision": 0.991,
+   "recall": 0.999,
+   "f1": 0.995,
+   "bao_thua_luc_mua_tuyet_pct": 28.6
+  }
+ ],
+ "n_anomalies": 18094,
+ "top_avg_speed": [
+  {
+   "road_id": "L4000122",
+   "road_name": "47 ROAD",
+   "district": "Manhattan",
+   "timestamp": "2024-10-22 13:00:00",
+   "value": 7.06,
+   "expected": 31.04,
+   "z_score": -10.45,
+   "weather_condition": "Rain"
+  },
+  {
+   "road_id": "L4000129",
+   "road_name": "37 STREET",
+   "district": "Queens",
+   "timestamp": "2024-05-07 12:00:00",
+   "value": 7.21,
+   "expected": 44.88,
+   "z_score": -10.29,
+   "weather_condition": "Thunderstorm"
+  },
+  {
+   "road_id": "L4000076",
+   "road_name": "145 STREET",
+   "district": "Manhattan",
+   "timestamp": "2024-10-25 14:00:00",
+   "value": 8.41,
+   "expected": 39.93,
+   "z_score": -10.24,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "L4000009",
+   "road_name": "38 AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-08-22 12:00:00",
+   "value": 9.03,
+   "expected": 43.7,
+   "z_score": -10.05,
+   "weather_condition": "Rain"
+  },
+  {
+   "road_id": "L4000069",
+   "road_name": "68 BOULEVARD",
+   "district": "Brooklyn",
+   "timestamp": "2024-04-24 15:00:00",
+   "value": 12.18,
+   "expected": 49.49,
+   "z_score": -10.03,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "L4000171",
+   "road_name": "112 AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-11-12 13:00:00",
+   "value": 15.12,
+   "expected": 77.06,
+   "z_score": -10.01,
+   "weather_condition": "Rain"
+  },
+  {
+   "road_id": "L4000138",
+   "road_name": "8 ROAD",
+   "district": "Queens",
+   "timestamp": "2024-12-23 20:00:00",
+   "value": 12.48,
+   "expected": 55.62,
+   "z_score": -9.83,
+   "weather_condition": "Rain"
+  },
+  {
+   "road_id": "L4000188",
+   "road_name": "157 EXPRESSWAY",
+   "district": "Queens",
+   "timestamp": "2024-01-29 21:00:00",
+   "value": 6.63,
+   "expected": 34.48,
+   "z_score": -9.79,
+   "weather_condition": "Snow"
+  },
+  {
+   "road_id": "L4000120",
+   "road_name": "121 ROAD",
+   "district": "Queens",
+   "timestamp": "2024-11-14 23:00:00",
+   "value": 15.79,
+   "expected": 61.26,
+   "z_score": -9.77,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4000118",
+   "road_name": "7 PARKWAY",
+   "district": "Brooklyn",
+   "timestamp": "2024-10-11 11:00:00",
+   "value": 16.6,
+   "expected": 75.04,
+   "z_score": -9.77,
+   "weather_condition": "Rain"
+  }
+ ],
+ "top_vehicle_count": [
+  {
+   "road_id": "L4000032",
+   "road_name": "94 AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-01-10 17:00:00",
+   "value": 12449.0,
+   "expected": 3529.21,
+   "z_score": 139.15,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S4000167",
+   "road_name": "74 BOULEVARD",
+   "district": "Bronx",
+   "timestamp": "2024-03-08 16:00:00",
+   "value": 11599.0,
+   "expected": 3319.44,
+   "z_score": 136.71,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S4000033",
+   "road_name": "72 ROAD",
+   "district": "Brooklyn",
+   "timestamp": "2024-05-09 18:00:00",
+   "value": 12680.0,
+   "expected": 3552.2,
+   "z_score": 136.35,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "L4000095",
+   "road_name": "61 ROAD",
+   "district": "Queens",
+   "timestamp": "2024-08-21 09:00:00",
+   "value": 10682.0,
+   "expected": 3014.32,
+   "z_score": 134.9,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S4000117",
+   "road_name": "23 PARKWAY",
+   "district": "Queens",
+   "timestamp": "2024-10-09 15:00:00",
+   "value": 8967.0,
+   "expected": 2531.03,
+   "z_score": 130.07,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S4000125",
+   "road_name": "36 ROAD",
+   "district": "Brooklyn",
+   "timestamp": "2024-05-17 08:00:00",
+   "value": 10881.0,
+   "expected": 2920.98,
+   "z_score": 127.49,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S4000125",
+   "road_name": "36 ROAD",
+   "district": "Brooklyn",
+   "timestamp": "2024-01-10 18:00:00",
+   "value": 11144.0,
+   "expected": 3130.16,
+   "z_score": 126.94,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S4000142",
+   "road_name": "57 BOULEVARD",
+   "district": "Staten Island",
+   "timestamp": "2024-01-19 17:00:00",
+   "value": 9765.0,
+   "expected": 2790.27,
+   "z_score": 125.06,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S4000007",
+   "road_name": "69 EXPRESSWAY",
+   "district": "Queens",
+   "timestamp": "2024-04-08 16:00:00",
+   "value": 7791.0,
+   "expected": 2230.21,
+   "z_score": 124.26,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4000119",
+   "road_name": "9 STREET",
+   "district": "Queens",
+   "timestamp": "2024-12-02 18:00:00",
+   "value": 11466.0,
+   "expected": 3287.72,
+   "z_score": 123.87,
+   "weather_condition": "Clear"
+  }
+ ],
+ "slow_days": [
+  {
+   "date": "2024-01-15",
+   "day_type": "weekend",
+   "ban_ghi": 3188,
+   "cham_bat_thuong": 388,
+   "nhanh_bat_thuong": 0,
+   "ti_le_bat_thuong_pct": 12.17,
+   "z_tb": -1.468,
+   "mua_mm_ngay": 5.7,
+   "tuyet_cm_ngay": 7.9
+  },
+  {
+   "date": "2024-01-01",
+   "day_type": "weekend",
+   "ban_ghi": 3189,
+   "cham_bat_thuong": 305,
+   "nhanh_bat_thuong": 0,
+   "ti_le_bat_thuong_pct": 9.56,
+   "z_tb": -1.392,
+   "mua_mm_ngay": 8.5,
+   "tuyet_cm_ngay": 4.2
+  },
+  {
+   "date": "2024-01-22",
+   "day_type": "weekday",
+   "ban_ghi": 3198,
+   "cham_bat_thuong": 255,
+   "nhanh_bat_thuong": 0,
+   "ti_le_bat_thuong_pct": 7.97,
+   "z_tb": -0.618,
+   "mua_mm_ngay": 0.8,
+   "tuyet_cm_ngay": 8.9
+  },
+  {
+   "date": "2024-12-19",
+   "day_type": "weekday",
+   "ban_ghi": 3204,
+   "cham_bat_thuong": 208,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 6.62,
+   "z_tb": -0.537,
+   "mua_mm_ngay": 10.1,
+   "tuyet_cm_ngay": 4.3
+  },
+  {
+   "date": "2024-02-01",
+   "day_type": "weekday",
+   "ban_ghi": 3203,
+   "cham_bat_thuong": 199,
+   "nhanh_bat_thuong": 2,
+   "ti_le_bat_thuong_pct": 6.28,
+   "z_tb": -0.383,
+   "mua_mm_ngay": 0.9,
+   "tuyet_cm_ngay": 6.8
+  },
+  {
+   "date": "2024-12-28",
+   "day_type": "weekend",
+   "ban_ghi": 3192,
+   "cham_bat_thuong": 188,
+   "nhanh_bat_thuong": 0,
+   "ti_le_bat_thuong_pct": 5.89,
+   "z_tb": -0.533,
+   "mua_mm_ngay": 10.7,
+   "tuyet_cm_ngay": 8.1
+  },
+  {
+   "date": "2024-01-28",
+   "day_type": "weekend",
+   "ban_ghi": 3199,
+   "cham_bat_thuong": 188,
+   "nhanh_bat_thuong": 1,
+   "ti_le_bat_thuong_pct": 5.91,
+   "z_tb": -0.27,
+   "mua_mm_ngay": 3.8,
+   "tuyet_cm_ngay": 5.8
+  },
+  {
+   "date": "2024-02-12",
+   "day_type": "weekday",
+   "ban_ghi": 3188,
+   "cham_bat_thuong": 185,
+   "nhanh_bat_thuong": 1,
+   "ti_le_bat_thuong_pct": 5.83,
+   "z_tb": -0.396,
+   "mua_mm_ngay": 4.6,
+   "tuyet_cm_ngay": 4.4
+  },
+  {
+   "date": "2024-02-14",
+   "day_type": "weekday",
+   "ban_ghi": 3209,
+   "cham_bat_thuong": 178,
+   "nhanh_bat_thuong": 2,
+   "ti_le_bat_thuong_pct": 5.61,
+   "z_tb": -0.29,
+   "mua_mm_ngay": 2.0,
+   "tuyet_cm_ngay": 6.2
+  },
+  {
+   "date": "2024-02-08",
+   "day_type": "weekday",
+   "ban_ghi": 3198,
+   "cham_bat_thuong": 175,
+   "nhanh_bat_thuong": 0,
+   "ti_le_bat_thuong_pct": 5.47,
+   "z_tb": -0.469,
+   "mua_mm_ngay": 6.0,
+   "tuyet_cm_ngay": 6.5
+  }
+ ],
+ "fast_days": [
+  {
+   "date": "2024-05-02",
+   "day_type": "weekday",
+   "ban_ghi": 3190,
+   "cham_bat_thuong": 9,
+   "nhanh_bat_thuong": 6,
+   "ti_le_bat_thuong_pct": 0.47,
+   "z_tb": 0.212,
+   "mua_mm_ngay": 0.9,
+   "tuyet_cm_ngay": 0.0
+  },
+  {
+   "date": "2024-12-06",
+   "day_type": "weekday",
+   "ban_ghi": 3193,
+   "cham_bat_thuong": 52,
+   "nhanh_bat_thuong": 5,
+   "ti_le_bat_thuong_pct": 1.79,
+   "z_tb": -0.066,
+   "mua_mm_ngay": 5.7,
+   "tuyet_cm_ngay": 1.8
+  },
+  {
+   "date": "2024-01-09",
+   "day_type": "weekday",
+   "ban_ghi": 3196,
+   "cham_bat_thuong": 67,
+   "nhanh_bat_thuong": 5,
+   "ti_le_bat_thuong_pct": 2.25,
+   "z_tb": 0.145,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 1.2
+  },
+  {
+   "date": "2024-02-29",
+   "day_type": "weekday",
+   "ban_ghi": 3205,
+   "cham_bat_thuong": 16,
+   "nhanh_bat_thuong": 5,
+   "ti_le_bat_thuong_pct": 0.66,
+   "z_tb": 0.21,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 0.3
+  },
+  {
+   "date": "2024-06-11",
+   "day_type": "weekday",
+   "ban_ghi": 3189,
+   "cham_bat_thuong": 10,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 0.44,
+   "z_tb": 0.073,
+   "mua_mm_ngay": 7.2,
+   "tuyet_cm_ngay": 0.0
+  },
+  {
+   "date": "2024-07-16",
+   "day_type": "weekday",
+   "ban_ghi": 3191,
+   "cham_bat_thuong": 5,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 0.28,
+   "z_tb": 0.06,
+   "mua_mm_ngay": 6.3,
+   "tuyet_cm_ngay": 0.0
+  },
+  {
+   "date": "2024-08-09",
+   "day_type": "weekday",
+   "ban_ghi": 3191,
+   "cham_bat_thuong": 6,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 0.31,
+   "z_tb": 0.168,
+   "mua_mm_ngay": 1.6,
+   "tuyet_cm_ngay": 0.0
+  },
+  {
+   "date": "2024-03-22",
+   "day_type": "weekday",
+   "ban_ghi": 3194,
+   "cham_bat_thuong": 7,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 0.34,
+   "z_tb": 0.068,
+   "mua_mm_ngay": 3.5,
+   "tuyet_cm_ngay": 0.2
+  },
+  {
+   "date": "2024-09-18",
+   "day_type": "weekday",
+   "ban_ghi": 3194,
+   "cham_bat_thuong": 1,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 0.16,
+   "z_tb": 0.258,
+   "mua_mm_ngay": 0.1,
+   "tuyet_cm_ngay": 0.0
+  },
+  {
+   "date": "2024-05-01",
+   "day_type": "weekday",
+   "ban_ghi": 3198,
+   "cham_bat_thuong": 19,
+   "nhanh_bat_thuong": 4,
+   "ti_le_bat_thuong_pct": 0.72,
+   "z_tb": -0.059,
+   "mua_mm_ngay": 9.9,
+   "tuyet_cm_ngay": 0.0
+  }
+ ],
+ "by_road": [
+  {
+   "road_id": "L4000165",
+   "road_name": "29 PARKWAY",
+   "district": "Brooklyn",
+   "so_bat_thuong": 110,
+   "cham": 102,
+   "z_min": -8.82
+  },
+  {
+   "road_id": "L4000009",
+   "road_name": "38 AVENUE",
+   "district": "Brooklyn",
+   "so_bat_thuong": 104,
+   "cham": 101,
+   "z_min": -10.05
+  },
+  {
+   "road_id": "L4000183",
+   "road_name": "56 STREET",
+   "district": "Brooklyn",
+   "so_bat_thuong": 103,
+   "cham": 99,
+   "z_min": -8.92
+  },
+  {
+   "road_id": "L4000030",
+   "road_name": "131 BOULEVARD",
+   "district": "Queens",
+   "so_bat_thuong": 103,
+   "cham": 103,
+   "z_min": -8.72
+  },
+  {
+   "road_id": "L4000134",
+   "road_name": "107 EXPRESSWAY",
+   "district": "Queens",
+   "so_bat_thuong": 103,
+   "cham": 99,
+   "z_min": -8.18
+  },
+  {
+   "road_id": "L4000067",
+   "road_name": "101 BOULEVARD",
+   "district": "Brooklyn",
+   "so_bat_thuong": 102,
+   "cham": 100,
+   "z_min": -9.51
+  },
+  {
+   "road_id": "L4000001",
+   "road_name": "83 EXPRESSWAY",
+   "district": "Brooklyn",
+   "so_bat_thuong": 101,
+   "cham": 100,
+   "z_min": -9.61
+  },
+  {
+   "road_id": "L4000051",
+   "road_name": "172 PARKWAY",
+   "district": "Manhattan",
+   "so_bat_thuong": 100,
+   "cham": 97,
+   "z_min": -9.1
+  },
+  {
+   "road_id": "L4000062",
+   "road_name": "70 EXPRESSWAY",
+   "district": "Queens",
+   "so_bat_thuong": 98,
+   "cham": 95,
+   "z_min": -8.62
+  },
+  {
+   "road_id": "L4000034",
+   "road_name": "53 STREET",
+   "district": "Brooklyn",
+   "so_bat_thuong": 98,
+   "cham": 94,
+   "z_min": -9.6
+  }
+ ]
+}

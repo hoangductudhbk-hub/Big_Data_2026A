@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Môi trường / bí mật
+.env
+*.env.local
+
+# Dữ liệu (quá lớn để đưa lên Git, tải lại bằng script)
+data/raw/**
+# data/interim và data/processed (Parquet, khoảng 50 MB) ĐƯỢC đưa lên Git để người sau chạy
+# Phase 2–3 và dashboard ngay, không cần tải lại 1,2 GB dữ liệu gốc (data/raw vẫn bị loại).
+data/mock/**
+data/bench/**
+!data/**/.gitkeep
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# File cu cho xoa, khong dua len Git

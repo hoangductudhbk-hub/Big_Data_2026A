@@ -1,0 +1,11 @@
+# Cách thay thế cho Windows: chạy các job Spark trong container (không cần cài Java/winutils lên Windows).
+#   docker build -f Dockerfile.spark -t bigdata-spark .
+#   docker run --rm -v "%cd%":/app bigdata-spark python -m spark_jobs.s11_basic        (cmd)
+#   docker run --rm -v "${PWD}":/app bigdata-spark python -m spark_jobs.s11_basic      (PowerShell)
+FROM python:3.11-slim
+RUN apt-get update && apt-get install -y --no-install-recommends openjdk-17-jre-headless procps \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY requirements-collect.txt requirements-integration.txt requirements-spark.txt ./
+RUN pip install --no-cache-dir -r requirements-spark.txt
+ENV SPARK_LOCAL_HOSTNAME=localhost PYTHONUNBUFFERED=1

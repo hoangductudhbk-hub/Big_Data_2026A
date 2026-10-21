@@ -1,0 +1,396 @@
+{
+ "generated": "2026-10-13 15:24",
+ "schema_matching": {
+  "name": {
+   "0.3": {
+    "predicted": 21,
+    "correct": 10,
+    "ground_truth": 23,
+    "precision": 0.476,
+    "recall": 0.435,
+    "f1": 0.455
+   },
+   "0.4": {
+    "predicted": 14,
+    "correct": 10,
+    "ground_truth": 23,
+    "precision": 0.714,
+    "recall": 0.435,
+    "f1": 0.541
+   },
+   "0.5": {
+    "predicted": 12,
+    "correct": 8,
+    "ground_truth": 23,
+    "precision": 0.667,
+    "recall": 0.348,
+    "f1": 0.457
+   },
+   "0.6": {
+    "predicted": 7,
+    "correct": 5,
+    "ground_truth": 23,
+    "precision": 0.714,
+    "recall": 0.217,
+    "f1": 0.333
+   },
+   "0.7": {
+    "predicted": 3,
+    "correct": 3,
+    "ground_truth": 23,
+    "precision": 1.0,
+    "recall": 0.13,
+    "f1": 0.231
+   }
+  },
+  "name+synonym": {
+   "0.3": {
+    "predicted": 32,
+    "correct": 23,
+    "ground_truth": 23,
+    "precision": 0.719,
+    "recall": 1.0,
+    "f1": 0.836
+   },
+   "0.4": {
+    "predicted": 27,
+    "correct": 23,
+    "ground_truth": 23,
+    "precision": 0.852,
+    "recall": 1.0,
+    "f1": 0.92
+   },
+   "0.5": {
+    "predicted": 27,
+    "correct": 23,
+    "ground_truth": 23,
+    "precision": 0.852,
+    "recall": 1.0,
+    "f1": 0.92
+   },
+   "0.6": {
+    "predicted": 26,
+    "correct": 23,
+    "ground_truth": 23,
+    "precision": 0.885,
+    "recall": 1.0,
+    "f1": 0.939
+   },
+   "0.7": {
+    "predicted": 25,
+    "correct": 22,
+    "ground_truth": 23,
+    "precision": 0.88,
+    "recall": 0.957,
+    "f1": 0.917
+   }
+  },
+  "detail_name_0.5": {
+   "speeds.id": [
+    "road_id",
+    0.5
+   ],
+   "speeds.speed": [
+    "avg_speed",
+    0.556
+   ],
+   "speeds.link_name": [
+    "road_name",
+    0.556
+   ],
+   "volume.street": [
+    "district",
+    0.5
+   ],
+   "weather.station_id": [
+    "weather_station_id",
+    0.667
+   ],
+   "weather.temperature_2m": [
+    "temperature",
+    0.786
+   ],
+   "weather.rain": [
+    "rainfall",
+    0.5
+   ],
+   "weather.snowfall": [
+    "snowfall",
+    1.0
+   ],
+   "weather.weather_code": [
+    "weather_condition",
+    0.647
+   ],
+   "weather.district": [
+    "district",
+    1.0
+   ],
+   "weather.grid_latitude": [
+    "latitude",
+    0.615
+   ],
+   "weather.grid_longitude": [
+    "longitude",
+    0.643
+   ]
+  },
+  "detail_synonym_0.5": {
+   "speeds.id": [
+    "road_id",
+    0.5
+   ],
+   "speeds.speed": [
+    "avg_speed",
+    1.0
+   ],
+   "speeds.travel_time": [
+    "timestamp",
+    1.0
+   ],
+   "speeds.data_as_of": [
+    "timestamp",
+    1.0
+   ],
+   "speeds.link_id": [
+    "road_id",
+    1.0
+   ],
+   "speeds.link_points": [
+    "latitude",
+    1.0
+   ],
+   "speeds.borough": [
+    "district",
+    1.0
+   ],
+   "speeds.link_name": [
+    "road_name",
+    1.0
+   ],
+   "volume.boro": [
+    "district",
+    1.0
+   ],
+   "volume.yr": [
+    "timestamp",
+    1.0
+   ],
+   "volume.m": [
+    "timestamp",
+    1.0
+   ],
+   "volume.d": [
+    "timestamp",
+    1.0
+   ],
+   "volume.hh": [
+    "timestamp",
+    1.0
+   ],
+   "volume.mm": [
+    "timestamp",
+    1.0
+   ],
+   "volume.vol": [
+    "vehicle_count",
+    1.0
+   ],
+   "volume.segmentid": [
+    "road_id",
+    1.0
+   ],
+   "volume.wktgeom": [
+    "latitude",
+    1.0
+   ],
+   "volume.street": [
+    "road_name",
+    1.0
+   ],
+   "weather.station_id": [
+    "weather_station_id",
+    0.667
+   ],
+   "weather.time_local": [
+    "timestamp",
+    1.0
+   ],
+   "weather.temperature_2m": [
+    "temperature",
+    1.0
+   ],
+   "weather.rain": [
+    "rainfall",
+    1.0
+   ],
+   "weather.snowfall": [
+    "snowfall",
+    1.0
+   ],
+   "weather.weather_code": [
+    "weather_condition",
+    1.0
+   ],
+   "weather.district": [
+    "district",
+    1.0
+   ],
+   "weather.grid_latitude": [
+    "latitude",
+    1.0
+   ],
+   "weather.grid_longitude": [
+    "longitude",
+    1.0
+   ]
+  }
+ },
+ "speeds": {
+  "readings": 9048108,
+  "link_hours": 789403,
+  "seconds": 3.5
+ },
+ "volume": {
+  "rows_15min": 94824,
+  "segment_hours": 16694,
+  "complete": 16530,
+  "dropped_incomplete": 164
+ },
+ "weather": {
+  "rows": 43915
+ },
+ "roads": {
+  "speeds_links": 125,
+  "speeds_main_roads": 37,
+  "volume_segments": 104,
+  "volume_streets": 85,
+  "acronyms_expanded_speeds": 103,
+  "names_changed_volume": 8,
+  "examples_speeds": [
+   {
+    "link_name": "LINCOLN TUNNEL E SOUTH TUBE - NJ - NY",
+    "main_road": "LINCOLN TUNNEL",
+    "direction": "E",
+    "endpoints": "SOUTH TUBE; NJ; NY"
+   },
+   {
+    "link_name": "LINCOLN TUNNEL E CENTER TUBE NJ - NY",
+    "main_road": "LINCOLN TUNNEL",
+    "direction": "E",
+    "endpoints": "CENTER TUBE NJ; NY"
+   },
+   {
+    "link_name": "MLK N WALKER STREET - NJ ROUTE 169",
+    "main_road": "MARTIN LUTHER KING EXPRESSWAY",
+    "direction": "N",
+    "endpoints": "WALKER STREET; NJ ROUTE 169"
+   },
+   {
+    "link_name": "LINCOLN TUNNEL W NORTH TUBE NY - NJ",
+    "main_road": "LINCOLN TUNNEL",
+    "direction": "W",
+    "endpoints": "NORTH TUBE NY; NJ"
+   },
+   {
+    "link_name": "LINCOLN TUNNEL W CENTER TUBE NY - NJ",
+    "main_road": "LINCOLN TUNNEL",
+    "direction": "W",
+    "endpoints": "CENTER TUBE NY; NJ"
+   },
+   {
+    "link_name": "CVE NB LIE - WILLETS PT BLVD",
+    "main_road": "CLEARVIEW EXPRESSWAY",
+    "direction": "NB",
+    "endpoints": "LONG ISLAND EXPRESSWAY; WILLETS POINT BOULEVARD"
+   },
+   {
+    "link_name": "LIE WB LITTLE NECK PKWY - NB CIP",
+    "main_road": "LONG ISLAND EXPRESSWAY",
+    "direction": "WB",
+    "endpoints": "LITTLE NECK PARKWAY; NB CROSS ISLAND PARKWAY"
+   },
+   {
+    "link_name": "CVE NB GCP - WILLETS PT BLVD",
+    "main_road": "CLEARVIEW EXPRESSWAY",
+    "direction": "NB",
+    "endpoints": "GRAND CENTRAL PARKWAY; WILLETS POINT BOULEVARD"
+   },
+   {
+    "link_name": "LIE WB LITTLE NECK PKWY - NB CVE",
+    "main_road": "LONG ISLAND EXPRESSWAY",
+    "direction": "WB",
+    "endpoints": "LITTLE NECK PARKWAY; NB CLEARVIEW EXPRESSWAY"
+   },
+   {
+    "link_name": "TNB S QNS ANCHORAGE - CIP S @ TNB",
+    "main_road": "THROGS NECK BRIDGE",
+    "direction": "S",
+    "endpoints": "QUEENS ANCHORAGE; CROSS ISLAND PARKWAY S THROGS NECK BRIDGE"
+   },
+   {
+    "link_name": "LIE E 84TH ST - 108TH ST",
+    "main_road": "LONG ISLAND EXPRESSWAY",
+    "direction": "E",
+    "endpoints": "84 STREET; 108 STREET"
+   },
+   {
+    "link_name": "FDR N - TBB E 116TH STREET - MANHATTAN TRUSS",
+    "main_road": "FDR DRIVE",
+    "direction": "N",
+    "endpoints": "TRIBOROUGH BRIDGE E 116 STREET; MANHATTAN TRUSS"
+   }
+  ],
+  "examples_volume": [
+   {
+    "street": "F D R DRIVE",
+    "main_road": "FDR DRIVE"
+   },
+   {
+    "street": "UNION ST BRIDGE",
+    "main_road": "UNION STREET BRIDGE"
+   },
+   {
+    "street": "ST JAMES PLACE",
+    "main_road": "SAINT JAMES PLACE"
+   },
+   {
+    "street": "WILLIAMSBURG BR APPROACH",
+    "main_road": "WILLIAMSBURG BRIDGE APPROACH"
+   },
+   {
+    "street": "WILLIAMSBURG BR APPROACH",
+    "main_road": "WILLIAMSBURG BRIDGE APPROACH"
+   },
+   {
+    "street": "BROOKLYN QUEENS EXPWY ET 34 WB",
+    "main_road": "BROOKLYN QUEENS EXPRESSWAY ET 34 WB"
+   },
+   {
+    "street": "EAST 174 ST BRIDGE",
+    "main_road": "EAST 174 STREET BRIDGE"
+   },
+   {
+    "street": "CITY IS BRIDGE",
+    "main_road": "CITY ISLAND BRIDGE"
+   }
+  ],
+  "top_main_roads": {
+   "STATEN ISLAND EXPRESSWAY": 12,
+   "WEST SHORE EXPRESSWAY": 9,
+   "BROOKLYN QUEENS EXPRESSWAY": 7,
+   "VAN WYCK EXPRESSWAY": 7,
+   "GOWANUS EXPRESSWAY": 6,
+   "CROSS BRONX EXPRESSWAY": 6,
+   "BRUCKNER EXPRESSWAY": 6,
+   "FDR DRIVE": 6,
+   "MAJOR DEEGAN EXPRESSWAY": 5,
+   "CROSS ISLAND PARKWAY": 5,
+   "LINCOLN TUNNEL": 4,
+   "BRONX WHITESTONE BRIDGE": 4,
+   "LONG ISLAND EXPRESSWAY": 4,
+   "TRIBOROUGH BRIDGE": 4,
+   "BELT PARKWAY": 3
+  }
+ }
+}

@@ -1,0 +1,586 @@
+{
+ "generated": "2026-10-13 22:34",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "methods": [
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Toàn cục theo đường",
+   "ban_ghi": 789403,
+   "duoc_cham_z": 789403,
+   "bat_thuong": 7726,
+   "ti_le_pct": 0.979,
+   "thap_bat_thuong": 7084,
+   "cao_bat_thuong": 642,
+   "trong_gio_cao_diem_pct": 36.1
+  },
+  {
+   "metric": "avg_speed",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "ban_ghi": 789403,
+   "duoc_cham_z": 788360,
+   "bat_thuong": 13503,
+   "ti_le_pct": 1.713,
+   "thap_bat_thuong": 11509,
+   "cao_bat_thuong": 1994,
+   "trong_gio_cao_diem_pct": 13.4
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Toàn cục theo đường",
+   "ban_ghi": 16530,
+   "duoc_cham_z": 16530,
+   "bat_thuong": 12,
+   "ti_le_pct": 0.073,
+   "thap_bat_thuong": 0,
+   "cao_bat_thuong": 12,
+   "trong_gio_cao_diem_pct": 58.3
+  },
+  {
+   "metric": "vehicle_count",
+   "phuong_phap": "Theo ngữ cảnh, leave-one-out (đường × giờ × loại ngày)",
+   "ban_ghi": 16530,
+   "duoc_cham_z": 3952,
+   "bat_thuong": 175,
+   "ti_le_pct": 4.428,
+   "thap_bat_thuong": 57,
+   "cao_bat_thuong": 118,
+   "trong_gio_cao_diem_pct": 25.7
+  }
+ ],
+ "n_anomalies": 13678,
+ "top_avg_speed": [
+  {
+   "road_id": "L4616202",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-06-23 21:00:00",
+   "value": 7.49,
+   "expected": 96.96,
+   "z_score": -30.37,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4616202",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-06-23 22:00:00",
+   "value": 4.99,
+   "expected": 97.88,
+   "z_score": -30.06,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4616193",
+   "road_name": "STATEN ISLAND EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-09-26 02:00:00",
+   "value": 2.0,
+   "expected": 90.99,
+   "z_score": -29.06,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4616202",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-06-22 23:00:00",
+   "value": 5.49,
+   "expected": 99.11,
+   "z_score": -26.82,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "L4616202",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-07-01 06:00:00",
+   "value": 6.98,
+   "expected": 100.98,
+   "z_score": -26.68,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "L4616202",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-06-29 07:00:00",
+   "value": 6.48,
+   "expected": 102.66,
+   "z_score": -26.63,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4616193",
+   "road_name": "STATEN ISLAND EXPRESSWAY",
+   "district": "Staten Island",
+   "timestamp": "2024-09-26 01:00:00",
+   "value": 2.5,
+   "expected": 90.72,
+   "z_score": -25.64,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4616267",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "timestamp": "2024-02-17 00:00:00",
+   "value": 5.49,
+   "expected": 86.71,
+   "z_score": -22.45,
+   "weather_condition": "Snow"
+  },
+  {
+   "road_id": "L4362342",
+   "road_name": "LONG ISLAND EXPRESSWAY",
+   "district": "Queens",
+   "timestamp": "2024-10-03 04:00:00",
+   "value": 14.81,
+   "expected": 93.21,
+   "z_score": -21.43,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "L4616228",
+   "road_name": "I 87 NEW YORK STATE THRUWAY",
+   "district": "Bronx",
+   "timestamp": "2024-08-06 20:00:00",
+   "value": 12.74,
+   "expected": 91.84,
+   "z_score": -21.27,
+   "weather_condition": "Drizzle"
+  }
+ ],
+ "top_vehicle_count": [
+  {
+   "road_id": "S31005",
+   "road_name": "DEKALB AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-12-06 17:00:00",
+   "value": 439.0,
+   "expected": 361.5,
+   "z_score": 23.26,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S146686",
+   "road_name": "BOSTON ROAD",
+   "district": "Bronx",
+   "timestamp": "2024-03-19 07:00:00",
+   "value": 973.0,
+   "expected": 672.88,
+   "z_score": 13.17,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S256338",
+   "road_name": "COOPER AVENUE",
+   "district": "Queens",
+   "timestamp": "2024-04-26 02:00:00",
+   "value": 88.0,
+   "expected": 38.44,
+   "z_score": 10.01,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S48507",
+   "road_name": "DECATUR STREET",
+   "district": "Brooklyn",
+   "timestamp": "2024-04-17 08:00:00",
+   "value": 315.0,
+   "expected": 152.38,
+   "z_score": 10.01,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S22652",
+   "road_name": "UNION STREET BRIDGE",
+   "district": "Brooklyn",
+   "timestamp": "2024-06-01 16:00:00",
+   "value": 389.0,
+   "expected": 232.5,
+   "z_score": 7.76,
+   "weather_condition": "Clear"
+  },
+  {
+   "road_id": "S105839",
+   "road_name": "3 AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-04-05 01:00:00",
+   "value": 204.0,
+   "expected": 83.25,
+   "z_score": 7.54,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S22652",
+   "road_name": "UNION STREET BRIDGE",
+   "district": "Brooklyn",
+   "timestamp": "2024-05-31 00:00:00",
+   "value": 102.0,
+   "expected": 47.89,
+   "z_score": 6.92,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S31164",
+   "road_name": "MARCY AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-12-09 03:00:00",
+   "value": 74.0,
+   "expected": 45.83,
+   "z_score": 6.76,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S31005",
+   "road_name": "DEKALB AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-12-06 02:00:00",
+   "value": 79.0,
+   "expected": 50.0,
+   "z_score": 6.48,
+   "weather_condition": "Cloudy"
+  },
+  {
+   "road_id": "S30999",
+   "road_name": "NOSTRAND AVENUE",
+   "district": "Brooklyn",
+   "timestamp": "2024-12-06 02:00:00",
+   "value": 352.0,
+   "expected": 189.33,
+   "z_score": 6.39,
+   "weather_condition": "Cloudy"
+  }
+ ],
+ "slow_days": [
+  {
+   "date": "2024-02-17",
+   "day_type": "weekend",
+   "ban_ghi": 2394,
+   "cham_bat_thuong": 134,
+   "nhanh_bat_thuong": 9,
+   "ti_le_bat_thuong_pct": 5.97,
+   "z_tb": -0.284,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 3.9,
+   "do_phu_pct": 92.6
+  },
+  {
+   "date": "2024-01-29",
+   "day_type": "weekday",
+   "ban_ghi": 876,
+   "cham_bat_thuong": 45,
+   "nhanh_bat_thuong": 1,
+   "ti_le_bat_thuong_pct": 5.25,
+   "z_tb": -0.339,
+   "mua_mm_ngay": 1.7,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 34.5
+  },
+  {
+   "date": "2024-12-13",
+   "day_type": "weekday",
+   "ban_ghi": 2291,
+   "cham_bat_thuong": 117,
+   "nhanh_bat_thuong": 1,
+   "ti_le_bat_thuong_pct": 5.15,
+   "z_tb": -0.546,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 93.8
+  },
+  {
+   "date": "2024-01-01",
+   "day_type": "weekend",
+   "ban_ghi": 2325,
+   "cham_bat_thuong": 110,
+   "nhanh_bat_thuong": 55,
+   "ti_le_bat_thuong_pct": 7.1,
+   "z_tb": 0.418,
+   "mua_mm_ngay": 0.1,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 92.3
+  },
+  {
+   "date": "2024-12-21",
+   "day_type": "weekend",
+   "ban_ghi": 2311,
+   "cham_bat_thuong": 106,
+   "nhanh_bat_thuong": 0,
+   "ti_le_bat_thuong_pct": 4.59,
+   "z_tb": -0.653,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 2.3,
+   "do_phu_pct": 94.6
+  },
+  {
+   "date": "2024-10-05",
+   "day_type": "weekend",
+   "ban_ghi": 2317,
+   "cham_bat_thuong": 105,
+   "nhanh_bat_thuong": 2,
+   "ti_le_bat_thuong_pct": 4.62,
+   "z_tb": -0.39,
+   "mua_mm_ngay": 0.3,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 92.9
+  },
+  {
+   "date": "2024-07-04",
+   "day_type": "weekend",
+   "ban_ghi": 2259,
+   "cham_bat_thuong": 101,
+   "nhanh_bat_thuong": 67,
+   "ti_le_bat_thuong_pct": 7.44,
+   "z_tb": 0.327,
+   "mua_mm_ngay": 3.2,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 91.5
+  },
+  {
+   "date": "2024-07-07",
+   "day_type": "weekend",
+   "ban_ghi": 2237,
+   "cham_bat_thuong": 96,
+   "nhanh_bat_thuong": 6,
+   "ti_le_bat_thuong_pct": 4.56,
+   "z_tb": -0.085,
+   "mua_mm_ngay": 0.4,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 90.6
+  },
+  {
+   "date": "2024-12-14",
+   "day_type": "weekend",
+   "ban_ghi": 2283,
+   "cham_bat_thuong": 97,
+   "nhanh_bat_thuong": 1,
+   "ti_le_bat_thuong_pct": 4.29,
+   "z_tb": -0.447,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 93.5
+  },
+  {
+   "date": "2024-06-19",
+   "day_type": "weekend",
+   "ban_ghi": 2332,
+   "cham_bat_thuong": 97,
+   "nhanh_bat_thuong": 12,
+   "ti_le_bat_thuong_pct": 4.67,
+   "z_tb": -0.289,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 94.6
+  }
+ ],
+ "fast_days": [
+  {
+   "date": "2024-02-13",
+   "day_type": "weekday",
+   "ban_ghi": 2346,
+   "cham_bat_thuong": 45,
+   "nhanh_bat_thuong": 207,
+   "ti_le_bat_thuong_pct": 10.74,
+   "z_tb": 0.75,
+   "mua_mm_ngay": 0.9,
+   "tuyet_cm_ngay": 16.0,
+   "do_phu_pct": 90.5
+  },
+  {
+   "date": "2024-01-07",
+   "day_type": "weekend",
+   "ban_ghi": 2367,
+   "cham_bat_thuong": 12,
+   "nhanh_bat_thuong": 91,
+   "ti_le_bat_thuong_pct": 4.35,
+   "z_tb": 0.693,
+   "mua_mm_ngay": 5.4,
+   "tuyet_cm_ngay": 1.1,
+   "do_phu_pct": 93.2
+  },
+  {
+   "date": "2024-07-04",
+   "day_type": "weekend",
+   "ban_ghi": 2259,
+   "cham_bat_thuong": 101,
+   "nhanh_bat_thuong": 67,
+   "ti_le_bat_thuong_pct": 7.44,
+   "z_tb": 0.327,
+   "mua_mm_ngay": 3.2,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 91.5
+  },
+  {
+   "date": "2024-07-05",
+   "day_type": "weekday",
+   "ban_ghi": 2274,
+   "cham_bat_thuong": 93,
+   "nhanh_bat_thuong": 66,
+   "ti_le_bat_thuong_pct": 6.99,
+   "z_tb": 0.368,
+   "mua_mm_ngay": 5.4,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 92.3
+  },
+  {
+   "date": "2024-01-01",
+   "day_type": "weekend",
+   "ban_ghi": 2325,
+   "cham_bat_thuong": 110,
+   "nhanh_bat_thuong": 55,
+   "ti_le_bat_thuong_pct": 7.1,
+   "z_tb": 0.418,
+   "mua_mm_ngay": 0.1,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 92.3
+  },
+  {
+   "date": "2024-01-03",
+   "day_type": "weekday",
+   "ban_ghi": 2351,
+   "cham_bat_thuong": 64,
+   "nhanh_bat_thuong": 46,
+   "ti_le_bat_thuong_pct": 4.68,
+   "z_tb": 0.458,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 92.5
+  },
+  {
+   "date": "2024-01-02",
+   "day_type": "weekday",
+   "ban_ghi": 2319,
+   "cham_bat_thuong": 86,
+   "nhanh_bat_thuong": 39,
+   "ti_le_bat_thuong_pct": 5.39,
+   "z_tb": 0.379,
+   "mua_mm_ngay": 0.0,
+   "tuyet_cm_ngay": 0.0,
+   "do_phu_pct": 91.5
+  },
+  {
+   "date": "2024-01-16",
+   "day_type": "weekday",
+   "ban_ghi": 2433,
+   "cham_bat_thuong": 97,
+   "nhanh_bat_thuong": 39,
+   "ti_le_bat_thuong_pct": 5.59,
+   "z_tb": -0.136,
+   "mua_mm_ngay": 4.2,
+   "tuyet_cm_ngay": 3.5,
+   "do_phu_pct": 96.1
+  },
+  {
+   "date": "2024-01-06",
+   "day_type": "weekend",
+   "ban_ghi": 2375,
+   "cham_bat_thuong": 12,
+   "nhanh_bat_thuong": 38,
+   "ti_le_bat_thuong_pct": 2.11,
+   "z_tb": 0.452,
+   "mua_mm_ngay": 7.6,
+   "tuyet_cm_ngay": 4.0,
+   "do_phu_pct": 93.6
+  },
+  {
+   "date": "2024-01-04",
+   "day_type": "weekday",
+   "ban_ghi": 2386,
+   "cham_bat_thuong": 21,
+   "nhanh_bat_thuong": 33,
+   "ti_le_bat_thuong_pct": 2.26,
+   "z_tb": 0.568,
+   "mua_mm_ngay": 0.1,
+   "tuyet_cm_ngay": 0.1,
+   "do_phu_pct": 93.8
+  }
+ ],
+ "by_road": [
+  {
+   "road_id": "L4616201",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "so_bat_thuong": 363,
+   "cham": 363,
+   "z_min": -6.04
+  },
+  {
+   "road_id": "L4616225",
+   "road_name": "TRIBOROUGH BRIDGE",
+   "district": "Queens",
+   "so_bat_thuong": 246,
+   "cham": 246,
+   "z_min": -9.68
+  },
+  {
+   "road_id": "L4456478",
+   "road_name": "BRUCKNER EXPRESSWAY",
+   "district": "Queens",
+   "so_bat_thuong": 230,
+   "cham": 230,
+   "z_min": -6.95
+  },
+  {
+   "road_id": "L4456477",
+   "road_name": "MAJOR DEEGAN EXPRESSWAY",
+   "district": "Queens",
+   "so_bat_thuong": 224,
+   "cham": 224,
+   "z_min": -7.2
+  },
+  {
+   "road_id": "L4616192",
+   "road_name": "STATEN ISLAND EXPRESSWAY",
+   "district": "Staten Island",
+   "so_bat_thuong": 212,
+   "cham": 212,
+   "z_min": -17.93
+  },
+  {
+   "road_id": "L4456481",
+   "road_name": "TRIBOROUGH BRIDGE",
+   "district": "Queens",
+   "so_bat_thuong": 209,
+   "cham": 209,
+   "z_min": -7.81
+  },
+  {
+   "road_id": "L4616252",
+   "road_name": "BRONX RIVER PARKWAY",
+   "district": "Bronx",
+   "so_bat_thuong": 203,
+   "cham": 194,
+   "z_min": -11.63
+  },
+  {
+   "road_id": "L4362244",
+   "road_name": "CLEARVIEW EXPRESSWAY",
+   "district": "Queens",
+   "so_bat_thuong": 200,
+   "cham": 155,
+   "z_min": -10.78
+  },
+  {
+   "road_id": "L4616229",
+   "road_name": "BROOKLYN QUEENS EXPRESSWAY",
+   "district": "Brooklyn",
+   "so_bat_thuong": 198,
+   "cham": 198,
+   "z_min": -10.04
+  },
+  {
+   "road_id": "L4616253",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "so_bat_thuong": 197,
+   "cham": 197,
+   "z_min": -12.4
+  }
+ ]
+}

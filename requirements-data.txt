@@ -1,0 +1,9 @@
+# Thư viện cho Phase 1 (Data Integration) và Phase 2 (PySpark)
+# Python 3.11 hoặc 3.12 · Java 17 (hoặc 21)
+pyspark==4.0.1
+pandas>=2.2
+pyarrow>=15
+requests>=2.31
+pyproj>=3.6        # đổi tọa độ State Plane (EPSG:2263) -> WGS84 lat/lon
+rapidfuzz>=3.6     # Levenshtein tốc độ cao cho record linkage
+pytest>=7

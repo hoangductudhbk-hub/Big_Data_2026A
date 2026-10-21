@@ -1,0 +1,136 @@
+{
+ "generated": "2026-10-13 16:05",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "exact": [
+  {
+   "district": "Brooklyn",
+   "n": 622966,
+   "toc_do_tb_kmh": 54.849474000302436
+  },
+  {
+   "district": "Staten Island",
+   "n": 1676570,
+   "toc_do_tb_kmh": 79.56967809902396
+  },
+  {
+   "district": "Manhattan",
+   "n": 1468656,
+   "toc_do_tb_kmh": 40.792739054953415
+  },
+  {
+   "district": "Queens",
+   "n": 3368987,
+   "toc_do_tb_kmh": 62.35226781135985
+  },
+  {
+   "district": "Bronx",
+   "n": 1910929,
+   "toc_do_tb_kmh": 62.08608630696429
+  }
+ ],
+ "accuracy": [
+  {
+   "ti_le_mau": "0.1%",
+   "mau_tb": 1805,
+   "sai_so_tb_pct": 0.6870394600530156,
+   "sai_so_max_pct": 1.883450530991875,
+   "ci95_chua_gia_tri_dung_pct": 100.0
+  },
+  {
+   "ti_le_mau": "1%",
+   "mau_tb": 18104,
+   "sai_so_tb_pct": 0.3672115562353451,
+   "sai_so_max_pct": 1.0569227994724566,
+   "ci95_chua_gia_tri_dung_pct": 96.0
+  },
+  {
+   "ti_le_mau": "5%",
+   "mau_tb": 90369,
+   "sai_so_tb_pct": 0.12483957798151911,
+   "sai_so_max_pct": 0.49948037468404277,
+   "ci95_chua_gia_tri_dung_pct": 96.0
+  },
+  {
+   "ti_le_mau": "10%",
+   "mau_tb": 180988,
+   "sai_so_tb_pct": 0.09824609818017369,
+   "sai_so_max_pct": 0.30103310625825863,
+   "ci95_chua_gia_tri_dung_pct": 100.0
+  },
+  {
+   "ti_le_mau": "30%",
+   "mau_tb": 542793,
+   "sai_so_tb_pct": 0.053964423213994514,
+   "sai_so_max_pct": 0.28673808584397836,
+   "ci95_chua_gia_tri_dung_pct": 92.0
+  }
+ ],
+ "err_ratio": [
+  1.87,
+  3.74
+ ],
+ "timing": [
+  {
+   "cach": "Exact: đọc Parquet + tính trên 100%",
+   "first_s": 0.59,
+   "best_s": 0.503
+  },
+  {
+   "cach": "Sample 1% tại chỗ: đọc Parquet + lấy mẫu + tính",
+   "first_s": 0.486,
+   "best_s": 0.374
+  },
+  {
+   "cach": "Exact trên dữ liệu đã cache (100%)",
+   "first_s": 0.646,
+   "best_s": 0.646
+  },
+  {
+   "cach": "Mẫu 1% dựng sẵn (cached)",
+   "first_s": 0.194,
+   "best_s": 0.17
+  }
+ ],
+ "count_distinct": [
+  {
+   "phuong_phap": "countDistinct (chính xác)",
+   "ket_qua": 789403,
+   "sai_so_pct": 0.0,
+   "thoi_gian_s": 10.673
+  },
+  {
+   "phuong_phap": "approx_count_distinct (HyperLogLog++, rsd=0.05)",
+   "ket_qua": 857497,
+   "sai_so_pct": 8.626,
+   "thoi_gian_s": 7.929
+  },
+  {
+   "phuong_phap": "approx_count_distinct (HyperLogLog++, rsd=0.01)",
+   "ket_qua": 791598,
+   "sai_so_pct": 0.278,
+   "thoi_gian_s": 8.102
+  }
+ ],
+ "median": [
+  {
+   "phuong_phap": "percentile (chính xác)",
+   "thoi_gian_s": 1.168,
+   "sai_so_max_pct": 0.0
+  },
+  {
+   "phuong_phap": "percentile_approx(accuracy=100)",
+   "thoi_gian_s": 2.085,
+   "sai_so_max_pct": 1.554
+  },
+  {
+   "phuong_phap": "percentile_approx(accuracy=10000)",
+   "thoi_gian_s": 3.415,
+   "sai_so_max_pct": 0.0
+  }
+ ]
+}

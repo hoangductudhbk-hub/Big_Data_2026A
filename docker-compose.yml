@@ -1,0 +1,40 @@
+# Toàn bộ Phase 3 bằng Docker:
+#   docker compose up -d --build                                   # PostgreSQL + API (tự tạo bảng)
+#   docker compose run --rm api python -m app.etl.load_processed   # nạp kết quả Phase 1–2 từ ./data
+#   mở http://localhost:8000  (dashboard)   http://localhost:8000/docs  (API)
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: traffic_bigdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d traffic_bigdata"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:postgres@db:5432/traffic_bigdata
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data:ro          # kết quả Phase 1–2 (Parquet), chỉ đọc
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:

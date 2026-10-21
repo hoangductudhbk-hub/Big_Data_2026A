@@ -1,0 +1,1129 @@
+{
+ "generated": "2026-10-13 16:25",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "statistics_rows": 419,
+ "overall": [
+  {
+   "metric": "avg_speed",
+   "n": 789403,
+   "mean": 60.989,
+   "std": 26.001,
+   "min": 1.0,
+   "max": 156.99,
+   "median": 67.0
+  },
+  {
+   "metric": "vehicle_count",
+   "n": 16530,
+   "mean": 527.343,
+   "std": 702.271,
+   "min": 0.0,
+   "max": 7266.0,
+   "median": 300.0
+  }
+ ],
+ "hour_daytype": [
+  {
+   "hour": 0,
+   "avg_speed_Cuối tuần": 67.2,
+   "avg_speed_Ngày thường": 69.8,
+   "vehicle_count_Cuối tuần": 343.7,
+   "vehicle_count_Ngày thường": 281.2
+  },
+  {
+   "hour": 1,
+   "avg_speed_Cuối tuần": 70.5,
+   "avg_speed_Ngày thường": 72.8,
+   "vehicle_count_Cuối tuần": 259.0,
+   "vehicle_count_Ngày thường": 177.9
+  },
+  {
+   "hour": 2,
+   "avg_speed_Cuối tuần": 72.7,
+   "avg_speed_Ngày thường": 75.7,
+   "vehicle_count_Cuối tuần": 202.9,
+   "vehicle_count_Ngày thường": 124.8
+  },
+  {
+   "hour": 3,
+   "avg_speed_Cuối tuần": 74.6,
+   "avg_speed_Ngày thường": 78.3,
+   "vehicle_count_Cuối tuần": 172.5,
+   "vehicle_count_Ngày thường": 110.9
+  },
+  {
+   "hour": 4,
+   "avg_speed_Cuối tuần": 76.5,
+   "avg_speed_Ngày thường": 79.8,
+   "vehicle_count_Cuối tuần": 165.5,
+   "vehicle_count_Ngày thường": 165.1
+  },
+  {
+   "hour": 5,
+   "avg_speed_Cuối tuần": 78.6,
+   "avg_speed_Ngày thường": 75.3,
+   "vehicle_count_Cuối tuần": 161.8,
+   "vehicle_count_Ngày thường": 320.6
+  },
+  {
+   "hour": 6,
+   "avg_speed_Cuối tuần": 78.3,
+   "avg_speed_Ngày thường": 62.5,
+   "vehicle_count_Cuối tuần": 214.6,
+   "vehicle_count_Ngày thường": 553.4
+  },
+  {
+   "hour": 7,
+   "avg_speed_Cuối tuần": 75.9,
+   "avg_speed_Ngày thường": 55.6,
+   "vehicle_count_Cuối tuần": 304.5,
+   "vehicle_count_Ngày thường": 752.6
+  },
+  {
+   "hour": 8,
+   "avg_speed_Cuối tuần": 72.2,
+   "avg_speed_Ngày thường": 52.4,
+   "vehicle_count_Cuối tuần": 392.5,
+   "vehicle_count_Ngày thường": 757.5
+  },
+  {
+   "hour": 9,
+   "avg_speed_Cuối tuần": 68.3,
+   "avg_speed_Ngày thường": 53.8,
+   "vehicle_count_Cuối tuần": 472.1,
+   "vehicle_count_Ngày thường": 696.9
+  },
+  {
+   "hour": 10,
+   "avg_speed_Cuối tuần": 63.9,
+   "avg_speed_Ngày thường": 54.3,
+   "vehicle_count_Cuối tuần": 539.9,
+   "vehicle_count_Ngày thường": 668.2
+  },
+  {
+   "hour": 11,
+   "avg_speed_Cuối tuần": 59.4,
+   "avg_speed_Ngày thường": 54.7,
+   "vehicle_count_Cuối tuần": 581.6,
+   "vehicle_count_Ngày thường": 676.0
+  },
+  {
+   "hour": 12,
+   "avg_speed_Cuối tuần": 56.9,
+   "avg_speed_Ngày thường": 55.5,
+   "vehicle_count_Cuối tuần": 626.5,
+   "vehicle_count_Ngày thường": 694.7
+  },
+  {
+   "hour": 13,
+   "avg_speed_Cuối tuần": 54.8,
+   "avg_speed_Ngày thường": 54.8,
+   "vehicle_count_Cuối tuần": 648.1,
+   "vehicle_count_Ngày thường": 729.1
+  },
+  {
+   "hour": 14,
+   "avg_speed_Cuối tuần": 53.1,
+   "avg_speed_Ngày thường": 51.3,
+   "vehicle_count_Cuối tuần": 665.1,
+   "vehicle_count_Ngày thường": 782.7
+  },
+  {
+   "hour": 15,
+   "avg_speed_Cuối tuần": 52.0,
+   "avg_speed_Ngày thường": 46.6,
+   "vehicle_count_Cuối tuần": 682.2,
+   "vehicle_count_Ngày thường": 812.3
+  },
+  {
+   "hour": 16,
+   "avg_speed_Cuối tuần": 51.3,
+   "avg_speed_Ngày thường": 44.1,
+   "vehicle_count_Cuối tuần": 673.2,
+   "vehicle_count_Ngày thường": 822.8
+  },
+  {
+   "hour": 17,
+   "avg_speed_Cuối tuần": 50.8,
+   "avg_speed_Ngày thường": 44.2,
+   "vehicle_count_Cuối tuần": 652.9,
+   "vehicle_count_Ngày thường": 823.8
+  },
+  {
+   "hour": 18,
+   "avg_speed_Cuối tuần": 52.3,
+   "avg_speed_Ngày thường": 48.4,
+   "vehicle_count_Cuối tuần": 633.8,
+   "vehicle_count_Ngày thường": 775.1
+  },
+  {
+   "hour": 19,
+   "avg_speed_Cuối tuần": 54.9,
+   "avg_speed_Ngày thường": 56.6,
+   "vehicle_count_Cuối tuần": 589.6,
+   "vehicle_count_Ngày thường": 697.7
+  },
+  {
+   "hour": 20,
+   "avg_speed_Cuối tuần": 57.4,
+   "avg_speed_Ngày thường": 62.5,
+   "vehicle_count_Cuối tuần": 540.8,
+   "vehicle_count_Ngày thường": 620.2
+  },
+  {
+   "hour": 21,
+   "avg_speed_Cuối tuần": 60.8,
+   "avg_speed_Ngày thường": 65.5,
+   "vehicle_count_Cuối tuần": 475.5,
+   "vehicle_count_Ngày thường": 545.5
+  },
+  {
+   "hour": 22,
+   "avg_speed_Cuối tuần": 63.9,
+   "avg_speed_Ngày thường": 65.9,
+   "vehicle_count_Cuối tuần": 419.8,
+   "vehicle_count_Ngày thường": 481.6
+  },
+  {
+   "hour": 23,
+   "avg_speed_Cuối tuần": 67.3,
+   "avg_speed_Ngày thường": 66.3,
+   "vehicle_count_Cuối tuần": 364.4,
+   "vehicle_count_Ngày thường": 409.4
+  }
+ ],
+ "weekday_speed_min_hour": 16,
+ "weekday_volume_max_hour": 17,
+ "day_of_week_avg_speed": [
+  {
+   "group_key": "1-CN",
+   "n": 112681,
+   "mean": 65.097,
+   "std": 25.302,
+   "min": 1.4,
+   "max": 133.58,
+   "median": 72.16
+  },
+  {
+   "group_key": "2-T2",
+   "n": 115183,
+   "mean": 62.234,
+   "std": 25.712,
+   "min": 2.0,
+   "max": 156.5,
+   "median": 68.74
+  },
+  {
+   "group_key": "3-T3",
+   "n": 111708,
+   "mean": 60.293,
+   "std": 26.126,
+   "min": 1.0,
+   "max": 156.99,
+   "median": 66.16
+  },
+  {
+   "group_key": "4-T4",
+   "n": 110511,
+   "mean": 59.319,
+   "std": 26.262,
+   "min": 1.66,
+   "max": 156.99,
+   "median": 64.99
+  },
+  {
+   "group_key": "5-T5",
+   "n": 112629,
+   "mean": 58.657,
+   "std": 26.46,
+   "min": 1.0,
+   "max": 139.39,
+   "median": 64.16
+  },
+  {
+   "group_key": "6-T6",
+   "n": 113176,
+   "mean": 58.919,
+   "std": 26.185,
+   "min": 1.0,
+   "max": 149.99,
+   "median": 64.07
+  },
+  {
+   "group_key": "7-T7",
+   "n": 113515,
+   "mean": 62.337,
+   "std": 25.31,
+   "min": 1.0,
+   "max": 127.99,
+   "median": 68.33
+  }
+ ],
+ "day_of_week_vehicle_count": [
+  {
+   "group_key": "1-CN",
+   "n": 2515,
+   "mean": 430.932,
+   "std": 524.233,
+   "min": 0.0,
+   "max": 4095.0,
+   "median": 245.0
+  },
+  {
+   "group_key": "2-T2",
+   "n": 2235,
+   "mean": 469.624,
+   "std": 559.717,
+   "min": 1.0,
+   "max": 4409.0,
+   "median": 290.0
+  },
+  {
+   "group_key": "3-T3",
+   "n": 2397,
+   "mean": 612.879,
+   "std": 891.982,
+   "min": 0.0,
+   "max": 7266.0,
+   "median": 327.0
+  },
+  {
+   "group_key": "4-T4",
+   "n": 2350,
+   "mean": 600.481,
+   "std": 859.785,
+   "min": 0.0,
+   "max": 6638.0,
+   "median": 323.0
+  },
+  {
+   "group_key": "5-T5",
+   "n": 2267,
+   "mean": 615.624,
+   "std": 846.53,
+   "min": 0.0,
+   "max": 6307.0,
+   "median": 321.0
+  },
+  {
+   "group_key": "6-T6",
+   "n": 2211,
+   "mean": 502.499,
+   "std": 545.062,
+   "min": 0.0,
+   "max": 4230.0,
+   "median": 325.0
+  },
+  {
+   "group_key": "7-T7",
+   "n": 2555,
+   "mean": 468.387,
+   "std": 541.553,
+   "min": 0.0,
+   "max": 4263.0,
+   "median": 279.0
+  }
+ ],
+ "month_avg_speed": [
+  {
+   "group_key": "2024-01",
+   "n": 67184,
+   "mean": 64.679,
+   "std": 24.62,
+   "min": 1.5,
+   "max": 137.0,
+   "median": 71.58
+  },
+  {
+   "group_key": "2024-02",
+   "n": 40113,
+   "mean": 61.857,
+   "std": 25.56,
+   "min": 1.9,
+   "max": 133.37,
+   "median": 69.16
+  },
+  {
+   "group_key": "2024-03",
+   "n": 69805,
+   "mean": 59.695,
+   "std": 25.919,
+   "min": 1.0,
+   "max": 136.88,
+   "median": 66.0
+  },
+  {
+   "group_key": "2024-04",
+   "n": 68596,
+   "mean": 60.414,
+   "std": 25.871,
+   "min": 1.0,
+   "max": 139.99,
+   "median": 67.345
+  },
+  {
+   "group_key": "2024-05",
+   "n": 68773,
+   "mean": 58.684,
+   "std": 26.376,
+   "min": 2.0,
+   "max": 156.99,
+   "median": 63.74
+  },
+  {
+   "group_key": "2024-06",
+   "n": 70026,
+   "mean": 59.638,
+   "std": 26.576,
+   "min": 1.0,
+   "max": 156.99,
+   "median": 65.07
+  },
+  {
+   "group_key": "2024-07",
+   "n": 69564,
+   "mean": 62.413,
+   "std": 25.483,
+   "min": 1.83,
+   "max": 141.99,
+   "median": 68.33
+  },
+  {
+   "group_key": "2024-08",
+   "n": 67381,
+   "mean": 61.614,
+   "std": 25.268,
+   "min": 1.0,
+   "max": 136.24,
+   "median": 66.83
+  },
+  {
+   "group_key": "2024-09",
+   "n": 69592,
+   "mean": 60.083,
+   "std": 26.712,
+   "min": 1.4,
+   "max": 131.2,
+   "median": 65.66
+  },
+  {
+   "group_key": "2024-10",
+   "n": 71173,
+   "mean": 61.205,
+   "std": 26.427,
+   "min": 1.0,
+   "max": 134.24,
+   "median": 66.66
+  },
+  {
+   "group_key": "2024-11",
+   "n": 68671,
+   "mean": 62.178,
+   "std": 26.11,
+   "min": 1.08,
+   "max": 127.49,
+   "median": 67.66
+  },
+  {
+   "group_key": "2024-12",
+   "n": 58525,
+   "mean": 59.711,
+   "std": 26.231,
+   "min": 1.67,
+   "max": 154.99,
+   "median": 64.33
+  }
+ ],
+ "month_vehicle_count": [
+  {
+   "group_key": "2024-01",
+   "n": 1536,
+   "mean": 219.81,
+   "std": 174.593,
+   "min": 2.0,
+   "max": 824.0,
+   "median": 172.5
+  },
+  {
+   "group_key": "2024-02",
+   "n": 968,
+   "mean": 408.6,
+   "std": 329.508,
+   "min": 19.0,
+   "max": 1429.0,
+   "median": 323.5
+  },
+  {
+   "group_key": "2024-03",
+   "n": 3156,
+   "mean": 659.38,
+   "std": 1014.333,
+   "min": 0.0,
+   "max": 7266.0,
+   "median": 358.5
+  },
+  {
+   "group_key": "2024-04",
+   "n": 1223,
+   "mean": 476.682,
+   "std": 630.732,
+   "min": 0.0,
+   "max": 4409.0,
+   "median": 266.0
+  },
+  {
+   "group_key": "2024-05",
+   "n": 2218,
+   "mean": 477.559,
+   "std": 652.302,
+   "min": 9.0,
+   "max": 4451.0,
+   "median": 272.0
+  },
+  {
+   "group_key": "2024-06",
+   "n": 3229,
+   "mean": 389.947,
+   "std": 466.17,
+   "min": 0.0,
+   "max": 2325.0,
+   "median": 239.0
+  },
+  {
+   "group_key": "2024-09",
+   "n": 576,
+   "mean": 348.191,
+   "std": 391.776,
+   "min": 0.0,
+   "max": 1359.0,
+   "median": 183.5
+  },
+  {
+   "group_key": "2024-10",
+   "n": 1608,
+   "mean": 932.42,
+   "std": 832.065,
+   "min": 0.0,
+   "max": 4348.0,
+   "median": 827.0
+  },
+  {
+   "group_key": "2024-11",
+   "n": 1152,
+   "mean": 878.464,
+   "std": 754.949,
+   "min": 0.0,
+   "max": 2551.0,
+   "median": 741.0
+  },
+  {
+   "group_key": "2024-12",
+   "n": 864,
+   "mean": 335.181,
+   "std": 174.824,
+   "min": 33.0,
+   "max": 787.0,
+   "median": 343.5
+  }
+ ],
+ "district_avg_speed": [
+  {
+   "group_key": "Bronx",
+   "n": 163992,
+   "mean": 62.24,
+   "std": 27.182,
+   "min": 1.0,
+   "max": 123.5,
+   "median": 70.32
+  },
+  {
+   "group_key": "Brooklyn",
+   "n": 52394,
+   "mean": 54.85,
+   "std": 25.083,
+   "min": 2.99,
+   "max": 94.24,
+   "median": 63.33
+  },
+  {
+   "group_key": "Manhattan",
+   "n": 138419,
+   "mean": 40.49,
+   "std": 19.936,
+   "min": 1.0,
+   "max": 156.99,
+   "median": 40.91
+  },
+  {
+   "group_key": "Queens",
+   "n": 293324,
+   "mean": 62.174,
+   "std": 23.114,
+   "min": 1.0,
+   "max": 139.99,
+   "median": 69.16
+  },
+  {
+   "group_key": "Staten Island",
+   "n": 141274,
+   "mean": 79.439,
+   "std": 20.421,
+   "min": 1.0,
+   "max": 110.74,
+   "median": 86.24
+  }
+ ],
+ "district_vehicle_count": [
+  {
+   "group_key": "Bronx",
+   "n": 1896,
+   "mean": 496.886,
+   "std": 359.025,
+   "min": 11.0,
+   "max": 1668.0,
+   "median": 447.5
+  },
+  {
+   "group_key": "Brooklyn",
+   "n": 6490,
+   "mean": 374.59,
+   "std": 397.898,
+   "min": 0.0,
+   "max": 2325.0,
+   "median": 223.0
+  },
+  {
+   "group_key": "Manhattan",
+   "n": 3294,
+   "mean": 937.612,
+   "std": 875.087,
+   "min": 0.0,
+   "max": 4451.0,
+   "median": 672.0
+  },
+  {
+   "group_key": "Queens",
+   "n": 4754,
+   "mean": 472.345,
+   "std": 872.519,
+   "min": 0.0,
+   "max": 7266.0,
+   "median": 250.0
+  },
+  {
+   "group_key": "Staten Island",
+   "n": 96,
+   "mean": 101.781,
+   "std": 86.707,
+   "min": 2.0,
+   "max": 392.0,
+   "median": 87.0
+  }
+ ],
+ "weather_condition_avg_speed": [
+  {
+   "group_key": "Clear",
+   "n": 354102,
+   "mean": 61.62,
+   "std": 26.222,
+   "min": 1.0,
+   "max": 156.99,
+   "median": 67.91
+  },
+  {
+   "group_key": "Cloudy",
+   "n": 317289,
+   "mean": 61.206,
+   "std": 26.09,
+   "min": 1.0,
+   "max": 156.99,
+   "median": 67.49
+  },
+  {
+   "group_key": "Drizzle",
+   "n": 83924,
+   "mean": 58.35,
+   "std": 25.417,
+   "min": 1.0,
+   "max": 136.24,
+   "median": 63.58
+  },
+  {
+   "group_key": "Rain",
+   "n": 23442,
+   "mean": 57.527,
+   "std": 24.264,
+   "min": 1.5,
+   "max": 110.17,
+   "median": 62.99
+  },
+  {
+   "group_key": "Snow",
+   "n": 10646,
+   "mean": 61.977,
+   "std": 22.034,
+   "min": 1.75,
+   "max": 104.08,
+   "median": 67.41
+  }
+ ],
+ "weather_condition_vehicle_count": [
+  {
+   "group_key": "Clear",
+   "n": 7485,
+   "mean": 526.257,
+   "std": 634.792,
+   "min": 0.0,
+   "max": 7266.0,
+   "median": 294.0
+  },
+  {
+   "group_key": "Cloudy",
+   "n": 6677,
+   "mean": 540.441,
+   "std": 754.274,
+   "min": 0.0,
+   "max": 7242.0,
+   "median": 312.0
+  },
+  {
+   "group_key": "Drizzle",
+   "n": 1658,
+   "mean": 512.999,
+   "std": 776.69,
+   "min": 0.0,
+   "max": 5509.0,
+   "median": 298.0
+  },
+  {
+   "group_key": "Rain",
+   "n": 549,
+   "mean": 500.984,
+   "std": 759.033,
+   "min": 0.0,
+   "max": 6307.0,
+   "median": 294.0
+  },
+  {
+   "group_key": "Snow",
+   "n": 161,
+   "mean": 272.205,
+   "std": 253.283,
+   "min": 2.0,
+   "max": 2268.0,
+   "median": 230.0
+  }
+ ],
+ "slowest_roads": [
+  {
+   "road_id": "L4616337",
+   "road_name": "11 AVENUE",
+   "district": "Manhattan",
+   "n_speed": 2314,
+   "mean_speed": 9.28,
+   "std_speed": 12.27
+  },
+  {
+   "road_id": "L4616338",
+   "road_name": "12 AVENUE",
+   "district": "Manhattan",
+   "n_speed": 2272,
+   "mean_speed": 9.85,
+   "std_speed": 15.08
+  },
+  {
+   "road_id": "L4616340",
+   "road_name": "BROOKLYN QUEENS EXPRESSWAY",
+   "district": "Manhattan",
+   "n_speed": 6735,
+   "mean_speed": 11.04,
+   "std_speed": 6.06
+  },
+  {
+   "road_id": "L4616357",
+   "road_name": "BELT PARKWAY",
+   "district": "Queens",
+   "n_speed": 7807,
+   "mean_speed": 17.07,
+   "std_speed": 8.22
+  },
+  {
+   "road_id": "L4456494",
+   "road_name": "WEST STREET",
+   "district": "Manhattan",
+   "n_speed": 6266,
+   "mean_speed": 24.05,
+   "std_speed": 5.39
+  },
+  {
+   "road_id": "L4616342",
+   "road_name": "BROOKLYN BRIDGE MANHATTAN SIDE",
+   "district": "Manhattan",
+   "n_speed": 7952,
+   "mean_speed": 24.92,
+   "std_speed": 12.13
+  },
+  {
+   "road_id": "L4616324",
+   "road_name": "12 AVENUE 45",
+   "district": "Manhattan",
+   "n_speed": 1900,
+   "mean_speed": 25.54,
+   "std_speed": 9.21
+  },
+  {
+   "road_id": "L4616223",
+   "road_name": "GOWANUS EXPRESSWAY",
+   "district": "Brooklyn",
+   "n_speed": 8187,
+   "mean_speed": 28.02,
+   "std_speed": 25.96
+  },
+  {
+   "road_id": "L4329472",
+   "road_name": "LINCOLN TUNNEL",
+   "district": "Manhattan",
+   "n_speed": 5056,
+   "mean_speed": 28.55,
+   "std_speed": 11.91
+  },
+  {
+   "road_id": "L4329508",
+   "road_name": "LINCOLN TUNNEL",
+   "district": "Manhattan",
+   "n_speed": 1118,
+   "mean_speed": 30.19,
+   "std_speed": 14.4
+  }
+ ],
+ "fastest_roads": [
+  {
+   "road_id": "L4616202",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "n_speed": 5477,
+   "mean_speed": 95.05,
+   "std_speed": 16.41
+  },
+  {
+   "road_id": "L4616212",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "n_speed": 5692,
+   "mean_speed": 91.24,
+   "std_speed": 13.99
+  },
+  {
+   "road_id": "L4616214",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "n_speed": 5686,
+   "mean_speed": 91.21,
+   "std_speed": 12.72
+  },
+  {
+   "road_id": "L4616213",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "n_speed": 5692,
+   "mean_speed": 90.84,
+   "std_speed": 10.54
+  },
+  {
+   "road_id": "L4616201",
+   "road_name": "WEST SHORE EXPRESSWAY",
+   "district": "Staten Island",
+   "n_speed": 5679,
+   "mean_speed": 88.2,
+   "std_speed": 21.59
+  },
+  {
+   "road_id": "L4616246",
+   "road_name": "BRUCKNER EXPRESSWAY",
+   "district": "Bronx",
+   "n_speed": 8201,
+   "mean_speed": 87.88,
+   "std_speed": 7.79
+  },
+  {
+   "road_id": "L4616199",
+   "road_name": "STATEN ISLAND EXPRESSWAY",
+   "district": "Staten Island",
+   "n_speed": 8219,
+   "mean_speed": 85.17,
+   "std_speed": 18.43
+  },
+  {
+   "road_id": "L4362250",
+   "road_name": "CLEARVIEW EXPRESSWAY",
+   "district": "Queens",
+   "n_speed": 6486,
+   "mean_speed": 84.96,
+   "std_speed": 15.49
+  },
+  {
+   "road_id": "L4616228",
+   "road_name": "I 87 NEW YORK STATE THRUWAY",
+   "district": "Bronx",
+   "n_speed": 7909,
+   "mean_speed": 83.8,
+   "std_speed": 22.26
+  },
+  {
+   "road_id": "L4616250",
+   "road_name": "HUTCHINSON RIVER PARKWAY",
+   "district": "Bronx",
+   "n_speed": 7362,
+   "mean_speed": 83.3,
+   "std_speed": 22.54
+  }
+ ],
+ "most_variable_roads": [
+  {
+   "road_id": "L4616267",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "n_speed": 8214,
+   "mean_speed": 56.01,
+   "std_speed": 33.81
+  },
+  {
+   "road_id": "L4616260",
+   "road_name": "BRUCKNER EXPRESSWAY",
+   "district": "Bronx",
+   "n_speed": 8201,
+   "mean_speed": 58.38,
+   "std_speed": 29.94
+  },
+  {
+   "road_id": "L4620331",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "n_speed": 8010,
+   "mean_speed": 43.8,
+   "std_speed": 27.57
+  },
+  {
+   "road_id": "L4362342",
+   "road_name": "LONG ISLAND EXPRESSWAY",
+   "district": "Queens",
+   "n_speed": 8198,
+   "mean_speed": 58.18,
+   "std_speed": 26.27
+  },
+  {
+   "road_id": "L4620332",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "n_speed": 8181,
+   "mean_speed": 42.36,
+   "std_speed": 26.12
+  },
+  {
+   "road_id": "L4616223",
+   "road_name": "GOWANUS EXPRESSWAY",
+   "district": "Brooklyn",
+   "n_speed": 8187,
+   "mean_speed": 28.02,
+   "std_speed": 25.96
+  },
+  {
+   "road_id": "L4616364",
+   "road_name": "LONG ISLAND EXPRESSWAY",
+   "district": "Queens",
+   "n_speed": 8202,
+   "mean_speed": 58.06,
+   "std_speed": 25.63
+  },
+  {
+   "road_id": "L4616309",
+   "road_name": "CROSS BRONX EXPRESSWAY",
+   "district": "Bronx",
+   "n_speed": 8187,
+   "mean_speed": 46.74,
+   "std_speed": 25.55
+  },
+  {
+   "road_id": "L4616232",
+   "road_name": "BROOKLYN QUEENS EXPRESSWAY",
+   "district": "Brooklyn",
+   "n_speed": 2721,
+   "mean_speed": 57.09,
+   "std_speed": 25.0
+  },
+  {
+   "road_id": "L4616310",
+   "road_name": "CROSS BRONX EXPRESSWAY AMSTERDAM AVENUE",
+   "district": "Bronx",
+   "n_speed": 8188,
+   "mean_speed": 45.81,
+   "std_speed": 24.82
+  }
+ ],
+ "busiest_roads": [
+  {
+   "road_id": "S9012153",
+   "road_name": "GRAND CENTRAL PARKWAY",
+   "district": "Queens",
+   "n_volume": 72,
+   "mean_volume": 4304.7,
+   "max_volume": 7266.0
+  },
+  {
+   "road_id": "S9012150",
+   "road_name": "GRAND CENTRAL PARKWAY",
+   "district": "Queens",
+   "n_volume": 72,
+   "mean_volume": 4304.3,
+   "max_volume": 6118.0
+  },
+  {
+   "road_id": "L4616332",
+   "road_name": "FDR DRIVE",
+   "district": "Manhattan",
+   "n_volume": 72,
+   "mean_volume": 2761.4,
+   "max_volume": 4348.0
+  },
+  {
+   "road_id": "S223885",
+   "road_name": "HENRY HUDSON PARKWAY",
+   "district": "Manhattan",
+   "n_volume": 168,
+   "mean_volume": 2647.3,
+   "max_volume": 4451.0
+  },
+  {
+   "road_id": "S66377",
+   "road_name": "BORDEN AVENUE",
+   "district": "Queens",
+   "n_volume": 96,
+   "mean_volume": 2298.9,
+   "max_volume": 3432.0
+  },
+  {
+   "road_id": "S252708",
+   "road_name": "WILLIAMSBURG BRIDGE APPROACH",
+   "district": "Manhattan",
+   "n_volume": 72,
+   "mean_volume": 1925.4,
+   "max_volume": 2827.0
+  },
+  {
+   "road_id": "S252704",
+   "road_name": "WILLIAMSBURG BRIDGE APPROACH",
+   "district": "Manhattan",
+   "n_volume": 72,
+   "mean_volume": 1740.7,
+   "max_volume": 2515.0
+  },
+  {
+   "road_id": "S71036",
+   "road_name": "MACOMBS DAM BRIDGE",
+   "district": "Manhattan",
+   "n_volume": 336,
+   "mean_volume": 1553.9,
+   "max_volume": 2551.0
+  },
+  {
+   "road_id": "S72887",
+   "road_name": "UNIVERSITY HEIGHTS BRIDGE",
+   "district": "Manhattan",
+   "n_volume": 336,
+   "mean_volume": 1509.2,
+   "max_volume": 2188.0
+  },
+  {
+   "road_id": "S28962",
+   "road_name": "FLATBUSH AVENUE",
+   "district": "Brooklyn",
+   "n_volume": 168,
+   "mean_volume": 1503.5,
+   "max_volume": 2026.0
+  }
+ ],
+ "daily_summary": [
+  {
+   "chi_so": "Tốc độ TB của ngày (km/h)",
+   "mean": 60.95049418604651,
+   "std": 3.590711379361844,
+   "min": 51.11,
+   "max": 72.53,
+   "ngay_cham_nhat": "2024-12-11",
+   "ngay_nhanh_nhat": "2024-01-07"
+  }
+ ],
+ "slowest_days": [
+  {
+   "date": "2024-12-11",
+   "mean_speed": 51.11,
+   "n_speed": 1592,
+   "temperature": 12.9,
+   "rain_mm_per_day": 38.9,
+   "snow_cm_per_day": 0.0
+  },
+  {
+   "date": "2024-03-28",
+   "mean_speed": 52.92,
+   "n_speed": 2354,
+   "temperature": 8.2,
+   "rain_mm_per_day": 24.9,
+   "snow_cm_per_day": 0.0
+  },
+  {
+   "date": "2024-12-16",
+   "mean_speed": 52.97,
+   "n_speed": 2324,
+   "temperature": 6.5,
+   "rain_mm_per_day": 15.7,
+   "snow_cm_per_day": 0.2
+  },
+  {
+   "date": "2024-05-15",
+   "mean_speed": 53.26,
+   "n_speed": 2176,
+   "temperature": 15.4,
+   "rain_mm_per_day": 8.9,
+   "snow_cm_per_day": 0.0
+  },
+  {
+   "date": "2024-11-21",
+   "mean_speed": 53.65,
+   "n_speed": 2327,
+   "temperature": 8.5,
+   "rain_mm_per_day": 47.5,
+   "snow_cm_per_day": 0.1
+  }
+ ],
+ "self_check": [
+  {
+   "chi_so": "n",
+   "pandas": 138419.0,
+   "spark": 138419.0,
+   "khop": true
+  },
+  {
+   "chi_so": "mean",
+   "pandas": 40.49,
+   "spark": 40.49,
+   "khop": true
+  },
+  {
+   "chi_so": "std",
+   "pandas": 19.936,
+   "spark": 19.936,
+   "khop": true
+  },
+  {
+   "chi_so": "median",
+   "pandas": 40.91,
+   "spark": 40.91,
+   "khop": true
+  }
+ ]
+}

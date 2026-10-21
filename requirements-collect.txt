@@ -1,0 +1,3 @@
+# Tối thiểu để chạy bước 05 (thu thập dữ liệu) - không cần Java/PySpark
+requests>=2.31
+pandas>=2.0

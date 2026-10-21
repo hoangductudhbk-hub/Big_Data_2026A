@@ -1,0 +1,4 @@
+# Phase 2 (PySpark). Đã chạy thực tế với: Ubuntu 22.04 · Python 3.10 · Java 11 · PySpark 3.5.3
+# PySpark 3.5.x chạy với Java 8/11/17 và Python 3.8–3.12. PySpark 4.0.x cần Java 17+ (cũng đã thử với code này).
+-r requirements-integration.txt
+pyspark==3.5.3

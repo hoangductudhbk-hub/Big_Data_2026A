@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giao thông New York 2024</title>
+  <link rel="icon" href="data:,">
+  <!-- Thư viện để sẵn trong vendor/ (Chart.js 4.4.1, Leaflet 1.9.4): dashboard chạy được khi không có Internet,
+       chỉ riêng nền bản đồ OpenStreetMap cần mạng -->
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/chart.umd.js"></script>
+  <script src="vendor/leaflet.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Giao thông New York 2024</h1>
+    <p class="sub">Tốc độ, lưu lượng và thời tiết · dữ liệu tích hợp từ NYC Open Data và Open-Meteo, xử lý bằng PySpark</p>
+  </div>
+  <div class="status" id="status" role="status">Đang kết nối API…</div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" data-tab="overview" aria-selected="true">Tổng quan</button>
+  <button role="tab" data-tab="map">Bản đồ</button>
+  <button role="tab" data-tab="weather">Thời tiết</button>
+  <button role="tab" data-tab="anomalies">Bất thường</button>
+  <button role="tab" data-tab="stats">Thống kê</button>
+  <button role="tab" data-tab="import">Nhập dữ liệu</button>
+</nav>
+
+<main>
+  <!-- ============ TỔNG QUAN ============ -->
+  <section id="tab-overview" class="tab active">
+    <div class="tiles" id="tiles"></div>
+    <div class="grid2">
+      <article class="card">
+        <h2>Tốc độ trung bình theo giờ</h2>
+        <p class="hint">km/h · ngày thường và cuối tuần</p>
+        <div class="chart"><canvas id="ch-hour-speed" aria-label="Tốc độ trung bình theo giờ"></canvas></div>
+      </article>
+      <article class="card">
+        <h2>Lưu lượng trung bình theo giờ</h2>
+        <p class="hint">xe/giờ · ngày thường và cuối tuần</p>
+        <div class="chart"><canvas id="ch-hour-volume" aria-label="Lưu lượng theo giờ"></canvas></div>
+      </article>
+    </div>
+    <article class="card">
+      <h2>Tốc độ trung bình mỗi ngày</h2>
+      <p class="hint">km/h · điểm xám là ngày mất dữ liệu (độ phủ &lt; 50%), không dùng để kết luận</p>
+      <div class="chart tall"><canvas id="ch-daily" aria-label="Tốc độ theo ngày"></canvas></div>
+      <h3 class="mini">Lượng mưa mỗi ngày</h3>
+      <div class="chart short"><canvas id="ch-rain" aria-label="Lượng mưa theo ngày"></canvas></div>
+    </article>
+    <article class="card">
+      <h2>Tốc độ trung bình theo quận</h2>
+      <p class="hint">km/h · trung vị trong bảng</p>
+      <div class="chart"><canvas id="ch-district" aria-label="Tốc độ theo quận"></canvas></div>
+      <div class="table-wrap" id="tb-district"></div>
+    </article>
+  </section>
+
+  <!-- ============ BẢN ĐỒ ============ -->
+  <section id="tab-map" class="tab">
+    <div class="filters">
+      <label>Quận <select id="map-district"><option value="">Tất cả</option></select></label>
+      <label>Hiển thị
+        <select id="map-mode">
+          <option value="speed">Tốc độ trung bình (đường có cảm biến)</option>
+          <option value="volume">Điểm đếm lưu lượng</option>
+        </select></label>
+      <div class="legend-scale" id="map-legend"></div>
+    </div>
+    <div class="map-layout">
+      <div id="map" class="card map" aria-label="Bản đồ đường"></div>
+      <aside class="card side" id="road-panel">
+        <h2>Chọn một đường trên bản đồ</h2>
+        <p class="hint">Màu thể hiện tốc độ trung bình cả năm so với trung vị các đường: đỏ là chậm hơn, xanh là nhanh hơn.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ THỜI TIẾT ============ -->
+  <section id="tab-weather" class="tab">
+    <article class="card">
+      <h2>Thời tiết làm tốc độ thay đổi bao nhiêu?</h2>
+      <p class="hint">% thay đổi tốc độ. <b>Thô</b>: so trung bình các nhóm (dễ bị nhiễu). <b>Có kiểm soát</b>: so với chính đường đó, cùng giờ, cùng loại ngày, cùng tháng lúc khô ráo.</p>
+      <div class="chart"><canvas id="ch-wx-cond" aria-label="Tác động theo điều kiện thời tiết"></canvas></div>
+      <div class="table-wrap" id="tb-wx-cond"></div>
+    </article>
+    <div class="grid2">
+      <article class="card">
+        <h2>Theo lượng mưa</h2>
+        <p class="hint">% thay đổi tốc độ có kiểm soát, giờ không có tuyết</p>
+        <div class="chart"><canvas id="ch-wx-rain" aria-label="Tác động theo lượng mưa"></canvas></div>
+      </article>
+      <article class="card">
+        <h2>Theo nhiệt độ</h2>
+        <p class="hint">So sánh thô cho thấy trời nóng thì chậm; sau kiểm soát, ảnh hưởng gần như bằng 0</p>
+        <div class="chart"><canvas id="ch-wx-temp" aria-label="Tác động theo nhiệt độ"></canvas></div>
+      </article>
+    </div>
+    <article class="card note">
+      <h2>Đọc kết quả</h2>
+      <ul>
+        <li>Mưa làm xe chậm khoảng <b>4,6%</b>. Mưa vào giờ cao điểm ngày thường làm chậm <b>8,4%</b>, gấp đôi ngoài cao điểm.</li>
+        <li>Tuyết trông như "làm xe nhanh hơn" chỉ vì mùa đông vốn vắng xe. Kiểm soát theo tháng thì tác động về khoảng 0.</li>
+        <li>Không phát hiện mưa làm giảm lưu lượng xe: dữ liệu đếm theo đợt ngắn, quá thưa để thấy tác động nhỏ.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ============ BẤT THƯỜNG ============ -->
+  <section id="tab-anomalies" class="tab">
+    <div class="filters">
+      <label>Chỉ số <select id="an-metric"><option value="">Tất cả</option><option value="avg_speed">Tốc độ</option><option value="vehicle_count">Lưu lượng</option></select></label>
+      <label>Quận <select id="an-district"><option value="">Tất cả</option></select></label>
+      <label>Hướng <select id="an-direction"><option value="">Cả hai</option><option>thấp bất thường</option><option>cao bất thường</option></select></label>
+      <label>|z| tối thiểu <select id="an-z"><option>3</option><option>4</option><option>5</option><option>10</option></select></label>
+    </div>
+    <div class="tiles" id="an-tiles"></div>
+    <article class="card">
+      <h2>Số bất thường tốc độ mỗi ngày (cả thành phố)</h2>
+      <p class="hint">Ngày nhiều đường cùng bất thường thường là sự kiện chung: trận tuyết 13/02, các ngày lễ</p>
+      <div class="chart tall"><canvas id="ch-an-daily" aria-label="Bất thường theo ngày"></canvas></div>
+    </article>
+    <article class="card">
+      <h2>Danh sách bất thường</h2>
+      <p class="hint" id="an-count"></p>
+      <div class="table-wrap" id="tb-anomalies"></div>
+      <div class="pager"><button id="an-prev">‹ Trước</button><span id="an-page"></span><button id="an-next">Sau ›</button></div>
+    </article>
+  </section>
+
+  <!-- ============ THỐNG KÊ ============ -->
+  <section id="tab-stats" class="tab">
+    <div class="filters">
+      <label>Nhóm theo <select id="st-dim"></select></label>
+      <label>Chỉ số <select id="st-metric"><option value="avg_speed">Tốc độ (km/h)</option><option value="vehicle_count">Lưu lượng (xe/giờ)</option></select></label>
+    </div>
+    <article class="card">
+      <h2 id="st-title">Thống kê do Spark tính sẵn</h2>
+      <p class="hint">Bảng <code>statistics</code> (bước 15): count, mean, std, min, max, median trên toàn năm 2024</p>
+      <div class="chart"><canvas id="ch-stats" aria-label="Biểu đồ thống kê"></canvas></div>
+      <div class="table-wrap" id="tb-stats"></div>
+    </article>
+    <article class="card">
+      <h2>Truy vấn trực tiếp trên PostgreSQL</h2>
+      <p class="hint">Tính lại bằng SQL trên 805 nghìn bản ghi, cho phép chọn khoảng thời gian. Không lọc thì phải khớp với bảng trên.</p>
+      <div class="filters inline">
+        <label>Từ <input type="date" id="lv-start" value="2024-01-01"></label>
+        <label>Đến trước <input type="date" id="lv-end" value="2025-01-01"></label>
+        <label>Nhóm theo <select id="lv-group"><option>district</option><option>hour</option><option>day_of_week</option><option>month</option><option>weather_condition</option><option>source</option></select></label>
+        <button id="lv-run">Tính</button>
+      </div>
+      <p class="hint" id="lv-time"></p>
+      <div class="table-wrap" id="tb-live"></div>
+    </article>
+  </section>
+
+  <!-- ============ NHẬP DỮ LIỆU ============ -->
+  <section id="tab-import" class="tab">
+    <article class="card">
+      <h2>Nhập bản ghi giao thông</h2>
+      <p class="hint">File CSV, JSON hoặc Parquet theo tên cột của data contract. Mỗi dòng được kiểm tra; dòng sai bị từ chối kèm lý do, dòng đúng được ghi (UPSERT theo road_id + timestamp).</p>
+      <form id="imp-form" class="filters inline">
+        <label>Loại <select id="imp-target"><option value="traffic">Giao thông</option><option value="weather">Thời tiết</option></select></label>
+        <input type="file" id="imp-file" accept=".csv,.json,.parquet" required>
+        <label class="check"><input type="checkbox" id="imp-aon"> Lỗi một dòng thì không ghi gì</label>
+        <button type="submit">Tải lên</button>
+      </form>
+      <pre class="example">road_id,timestamp,avg_speed,vehicle_count
+L4616337,2025-01-02T08:00:00,12.5,
+S999001,2025-01-02T08:00:00,,640   ← đường mới: thêm road_name,district,latitude,longitude</pre>
+      <div id="imp-result"></div>
+    </article>
+    <article class="card">
+      <h2>Nhật ký nạp dữ liệu</h2>
+      <p class="hint">Mọi lần nạp (loader Phase 1–2 và import qua API) đều được ghi lại</p>
+      <div class="table-wrap" id="tb-logs"></div>
+    </article>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>API: <a href="/docs">/docs</a></span>
+  <span>Nguồn: NYC DOT Traffic Speeds, Automated Traffic Volume Counts, Open-Meteo</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

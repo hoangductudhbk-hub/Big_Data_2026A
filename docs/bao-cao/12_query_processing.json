@@ -1,0 +1,98 @@
+{
+ "generated": "2026-10-13 15:59",
+ "env": {
+  "spark": "3.5.3",
+  "master": "local[*]",
+  "parallelism": 2,
+  "integrated_path": "data/processed/integrated_traffic"
+ },
+ "experiments": [
+  {
+   "thi_nghiem": "A. Catalyst bật",
+   "truy_van": "Q1: Join → Filter",
+   "vi_tri_dieu_kien_loc": "dưới Join (lọc TRƯỚC khi join)",
+   "dong_toc_do_vao_join": 800924,
+   "lan_dau_s": 4.168,
+   "tot_nhat_s": 3.865,
+   "n": 21167,
+   "avg_kmh": 55.3
+  },
+  {
+   "thi_nghiem": "A. Catalyst bật",
+   "truy_van": "Q2: Filter → Join",
+   "vi_tri_dieu_kien_loc": "dưới Join (lọc TRƯỚC khi join)",
+   "dong_toc_do_vao_join": 800924,
+   "lan_dau_s": 4.078,
+   "tot_nhat_s": 3.785,
+   "n": 21167,
+   "avg_kmh": 55.3
+  },
+  {
+   "thi_nghiem": "B. Tắt 5 quy tắc đẩy filter",
+   "truy_van": "Q1: Join → Filter",
+   "vi_tri_dieu_kien_loc": "trên Join (lọc SAU khi join)",
+   "dong_toc_do_vao_join": 9048108,
+   "lan_dau_s": 9.202,
+   "tot_nhat_s": 8.51,
+   "n": 21167,
+   "avg_kmh": 55.3
+  },
+  {
+   "thi_nghiem": "B. Tắt 5 quy tắc đẩy filter",
+   "truy_van": "Q2: Filter → Join",
+   "vi_tri_dieu_kien_loc": "dưới Join (lọc TRƯỚC khi join)",
+   "dong_toc_do_vao_join": 800924,
+   "lan_dau_s": 2.4,
+   "tot_nhat_s": 2.107,
+   "n": 21167,
+   "avg_kmh": 55.3
+  }
+ ],
+ "rows_all": 9048108,
+ "rows_march": 800924,
+ "results_equal": true,
+ "ratio_A": 1.02,
+ "ratio_B": 4.04,
+ "parquet_read": [
+  {
+   "cach_doc": "Không lọc",
+   "so_dong": 9048108,
+   "first_s": 0.312,
+   "best_s": 0.228,
+   "PartitionFilters": "—",
+   "PushedFilters": "—"
+  },
+  {
+   "cach_doc": "Cột partition: month = '2024-03'",
+   "so_dong": 800924,
+   "first_s": 0.11,
+   "best_s": 0.079,
+   "PartitionFilters": "isnotnull(month#1929), (month#1929 = 2024-03)",
+   "PushedFilters": "—"
+  },
+  {
+   "cach_doc": "Cột timestamp, so với hằng TIMESTAMP_NTZ (đúng kiểu)",
+   "so_dong": 800924,
+   "first_s": 0.314,
+   "best_s": 0.267,
+   "PartitionFilters": "—",
+   "PushedFilters": "IsNotNull(timestamp), GreaterThanOrEqual(timestamp,2024-03-01T00:00), LessT"
+  },
+  {
+   "cach_doc": "Cột timestamp, so với CHUỖI '2024-03-01' (sai kiểu)",
+   "so_dong": 800924,
+   "first_s": 0.349,
+   "best_s": 0.291,
+   "PartitionFilters": "—",
+   "PushedFilters": "IsNotNull(timestamp), GreaterThanOrEqual(timestamp,2024-03-01T00:00), LessT"
+  },
+  {
+   "cach_doc": "Cột timestamp đúng kiểu, TẮT Parquet pushdown",
+   "so_dong": 800924,
+   "first_s": 0.337,
+   "best_s": 0.28,
+   "PartitionFilters": "—",
+   "PushedFilters": "IsNotNull(timestamp), GreaterThanOrEqual(timestamp,2024-03-01T00:00), LessT"
+  }
+ ]
+}

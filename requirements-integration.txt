@@ -1,0 +1,6 @@
+# Phase 1 (Data Integration: profiling, cleaning, alignment, linkage) - KHÔNG cần Java/PySpark
+-r requirements-collect.txt
+pyarrow>=15
+pyproj>=3.6        # đổi tọa độ State Plane (EPSG:2263) -> WGS84 lat/lon
+rapidfuzz>=3.6     # Levenshtein tốc độ cao cho record linkage
+pytest>=7

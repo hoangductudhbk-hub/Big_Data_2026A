@@ -1,0 +1,146 @@
+{
+ "generated": "2026-10-13 15:40",
+ "contract_version": "1.0.0",
+ "volume_rows_without_road": 0,
+ "rows_by_source": {
+  "speeds": 789250,
+  "volume": 16377,
+  "speeds+volume": 153
+ },
+ "rows_dropped_no_coordinates": 0,
+ "rows_weather_from_next_hour": 2,
+ "rows_without_weather": 0,
+ "rows": 805780,
+ "contract_errors": [],
+ "roads": 211,
+ "time_min": "2024-01-01 00:00:00",
+ "time_max": "2024-12-31 23:00:00",
+ "by_district": {
+  "Queens": 298078,
+  "Bronx": 165888,
+  "Manhattan": 141656,
+  "Staten Island": 141370,
+  "Brooklyn": 58788
+ },
+ "by_weather": {
+  "Clear": 361507,
+  "Cloudy": 323898,
+  "Drizzle": 85578,
+  "Rain": 23991,
+  "Snow": 10806
+ },
+ "nulls": {
+  "road_id": 0,
+  "road_name": 0,
+  "district": 0,
+  "latitude": 0,
+  "longitude": 0,
+  "timestamp": 0,
+  "vehicle_count": 789250,
+  "avg_speed": 16377,
+  "temperature": 0,
+  "rainfall": 0,
+  "snowfall": 0,
+  "weather_condition": 0,
+  "weather_station_id": 0,
+  "source": 0
+ },
+ "by_month": [
+  {
+   "thang": "2024-01",
+   "dong": 68720,
+   "duong": 113,
+   "toc_do_tb": 64.7,
+   "luu_luong_tb": 219.8,
+   "nhiet_do_tb": 1.4
+  },
+  {
+   "thang": "2024-02",
+   "dong": 41081,
+   "duong": 114,
+   "toc_do_tb": 61.9,
+   "luu_luong_tb": 408.6,
+   "nhiet_do_tb": 1.7
+  },
+  {
+   "thang": "2024-03",
+   "dong": 72865,
+   "duong": 135,
+   "toc_do_tb": 59.7,
+   "luu_luong_tb": 659.4,
+   "nhiet_do_tb": 6.9
+  },
+  {
+   "thang": "2024-04",
+   "dong": 69819,
+   "duong": 110,
+   "toc_do_tb": 60.4,
+   "luu_luong_tb": 476.7,
+   "nhiet_do_tb": 10.5
+  },
+  {
+   "thang": "2024-05",
+   "dong": 70991,
+   "duong": 117,
+   "toc_do_tb": 58.7,
+   "luu_luong_tb": 477.6,
+   "nhiet_do_tb": 16.7
+  },
+  {
+   "thang": "2024-06",
+   "dong": 73255,
+   "duong": 120,
+   "toc_do_tb": 59.6,
+   "luu_luong_tb": 389.9,
+   "nhiet_do_tb": 22.7
+  },
+  {
+   "thang": "2024-07",
+   "dong": 69564,
+   "duong": 103,
+   "toc_do_tb": 62.4,
+   "luu_luong_tb": null,
+   "nhiet_do_tb": 25.2
+  },
+  {
+   "thang": "2024-08",
+   "dong": 67381,
+   "duong": 104,
+   "toc_do_tb": 61.6,
+   "luu_luong_tb": null,
+   "nhiet_do_tb": 23.2
+  },
+  {
+   "thang": "2024-09",
+   "dong": 70168,
+   "duong": 107,
+   "toc_do_tb": 60.1,
+   "luu_luong_tb": 348.2,
+   "nhiet_do_tb": 19.6
+  },
+  {
+   "thang": "2024-10",
+   "dong": 72724,
+   "duong": 116,
+   "toc_do_tb": 61.2,
+   "luu_luong_tb": 932.4,
+   "nhiet_do_tb": 14.8
+  },
+  {
+   "thang": "2024-11",
+   "dong": 69823,
+   "duong": 113,
+   "toc_do_tb": 62.2,
+   "luu_luong_tb": 878.5,
+   "nhiet_do_tb": 10.1
+  },
+  {
+   "thang": "2024-12",
+   "dong": 59389,
+   "duong": 106,
+   "toc_do_tb": 59.7,
+   "luu_luong_tb": 335.2,
+   "nhiet_do_tb": 2.8
+  }
+ ]
+}
